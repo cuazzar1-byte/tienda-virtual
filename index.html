@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferre</title>
+    <title>Ejemplo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
-            --primary-light: #eff6ff;
+            --primary: #4f46e5;
+            --primary-dark: #4338ca;
+            --primary-light: #eef2ff;
             --accent-green: #10b981;
             --accent-green-dark: #059669;
             --text-main: #0f172a;
@@ -19,9 +19,10 @@
             --bg-page: #f8fafc;
             --bg-card: #ffffff;
             --border-color: #e2e8f0;
-            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 12px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            --shadow-lg: 0 12px 24px -4px rgb(0 0 0 / 0.08);
+            --shadow-xl: 0 20px 30px -5px rgb(0 0 0 / 0.12), 0 8px 10px -6px rgb(0 0 0 / 0.08);
         }
 
         * {
@@ -90,16 +91,18 @@
 
         /* HERO / BANNER */
         .hero {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4338ca 100%);
             color: white;
-            padding: 2.25rem 1.25rem;
+            padding: 2.75rem 1.25rem;
             text-align: center;
+            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
         }
 
         .hero h2 {
-            font-size: 1.75rem;
+            font-size: 1.85rem;
             font-weight: 800;
             margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
         }
 
         .hero p {
@@ -146,7 +149,7 @@
 
         .search-box input:focus {
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.18);
         }
 
         .search-icon {
@@ -590,48 +593,226 @@
             background: #2563eb;
         }
 
-        /* FOOTER */
-        footer {
-            background: #ffffff;
-            border-top: 1px solid var(--border-color);
-            padding: 2.25rem 1.25rem;
-            text-align: center;
+        /* FOOTER & PROMINENT APP CTA */
+        .main-footer {
+            background: #0f172a;
+            color: #f8fafc;
+            padding: 3.5rem 1.25rem 2.25rem 1.25rem;
             margin-top: auto;
+            border-top: 1px solid #1e293b;
         }
 
-        .footer-content p {
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .app-cta-banner {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.22) 0%, rgba(30, 27, 75, 0.75) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            padding: 2.5rem 2.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-bottom: 2.75rem;
+            box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .cta-content {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .cta-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(99, 102, 241, 0.25);
+            color: #c7d2fe;
+            border: 1px solid rgba(165, 180, 252, 0.35);
+            padding: 0.35rem 0.9rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.85rem;
+        }
+
+        .cta-badge-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #818cf8;
+            box-shadow: 0 0 8px #818cf8;
+        }
+
+        .cta-title {
+            font-size: 1.65rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.25;
+            margin-bottom: 0.65rem;
+            letter-spacing: -0.02em;
+        }
+
+        .cta-desc {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            max-width: 580px;
+            line-height: 1.55;
+            margin-bottom: 1.15rem;
+        }
+
+        .cta-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .highlight-pill {
+            background: rgba(255, 255, 255, 0.08);
+            color: #e2e8f0;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.35rem 0.75rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .cta-action {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.6rem;
+            flex-shrink: 0;
+        }
+
+        .google-play-card-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.85rem;
+            background: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.75rem 1.4rem;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.6);
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .google-play-card-btn:hover {
+            background: #1e293b;
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-3px);
+            box-shadow: 0 14px 28px -4px rgba(0, 0, 0, 0.7);
+        }
+
+        .play-btn-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .play-sub {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #94a3b8;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .play-main {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+        }
+
+        .cta-subtext {
+            font-size: 0.78rem;
+            color: #94a3b8;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 2rem;
+        }
+
+        .store-copyright {
             font-size: 0.9rem;
-            color: var(--text-muted);
+            color: #94a3b8;
+            margin-bottom: 0.5rem;
         }
 
-        .footer-branding {
-            margin-top: 0.85rem;
-            padding-top: 0.85rem;
-            border-top: 1px solid #f1f5f9;
+        .app-tagline {
             font-size: 0.85rem;
             color: #64748b;
         }
 
-        .footer-branding a {
-            color: var(--primary);
-            font-weight: 700;
+        .app-tagline a {
+            color: #818cf8;
             text-decoration: none;
+            font-weight: 700;
         }
 
-        .footer-branding a:hover {
+        .app-tagline a:hover {
             text-decoration: underline;
         }
 
+        @media (max-width: 768px) {
+            .app-cta-banner {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem 1.25rem;
+                gap: 1.5rem;
+            }
+            .cta-highlights {
+                justify-content: center;
+            }
+            .cta-action {
+                width: 100%;
+            }
+            .google-play-card-btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+        }
+
         @media (max-width: 640px) {
+            .header-container {
+                padding: 0.75rem 1rem;
+            }
+            .brand-text h1 {
+                font-size: 1.05rem;
+            }
+            .hero {
+                padding: 2rem 1rem;
+            }
+            .hero h2 {
+                font-size: 1.45rem;
+            }
+            .hero p {
+                font-size: 0.875rem;
+            }
             .products-grid {
-                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-                gap: 0.85rem;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 0.75rem;
             }
             .card-body {
                 padding: 0.75rem;
             }
             .card-title {
-                font-size: 0.9rem;
+                font-size: 0.875rem;
             }
             .card-price {
                 font-size: 1rem;
@@ -639,6 +820,12 @@
             .btn-add {
                 padding: 0.45rem 0.65rem;
                 font-size: 0.75rem;
+            }
+            .floating-cart {
+                bottom: 16px;
+                right: 16px;
+                padding: 0.75rem 1.15rem;
+                font-size: 0.875rem;
             }
         }
     </style>
@@ -651,20 +838,20 @@
             <div class="brand-info">
                 <img src="images/logo.png" alt="Logo" class="brand-logo">
                 <div class="brand-text">
-                    <h1>Ferre</h1>
-                    <p>Venta de Ferre</p>
+                    <h1>Ejemplo</h1>
+                    <p>Venta de accesorios</p>
                 </div>
             </div>
             <div style="display: flex; gap: 0.5rem;">
-                <a href="https://wa.me/50248146601" target="_blank" style="text-decoration:none;" class="btn-add" style="background:#25d366;">💬 WhatsApp</a>
+                <a href="https://wa.me/50235224837" target="_blank" style="text-decoration:none;" class="btn-add" style="background:#25d366;">💬 WhatsApp</a>
             </div>
         </div>
     </header>
 
     <!-- BANNER HERO -->
     <section class="hero">
-        <h2>Ferre</h2>
-        <p>Venta de Ferre</p>
+        <h2>Ejemplo</h2>
+        <p>Venta de accesorios</p>
     </section>
 
     <!-- CONTENIDO PRINCIPAL -->
@@ -727,8 +914,8 @@
 
     <!-- FORMULARIO PARA ENVÍO POR SUBMIT -->
     
-    <form id="orderSubmitForm" action="https://formsubmit.co/cuazzar1@gmail.com" method="POST" target="_blank" style="display:none;">
-        <input type="hidden" name="_subject" id="submitSubject" value="Nuevo Pedido - Ferre">
+    <form id="orderSubmitForm" action="https://formsubmit.co/creativeplanett@gmail.com" method="POST" target="_blank" style="display:none;">
+        <input type="hidden" name="_subject" id="submitSubject" value="Nuevo Pedido - Ejemplo">
         <input type="hidden" name="Cliente" id="submitClient">
         <input type="hidden" name="Dirección o Notas" id="submitAddress">
         <input type="hidden" name="Detalle del Pedido" id="submitOrderDetails">
@@ -738,16 +925,50 @@
     </form>
     
 
-    <!-- PIE DE PÁGINA PREDETERMINADO -->
-    <footer>
-        <div class="footer-content">
-            <p>© <span id="year"></span> <strong>Ferre</strong>. Todos los derechos reservados.</p>
-            <div class="footer-branding">
-                Tienda en línea creada con 
-                <a href="https://play.google.com/store/apps/details?id=com.inventariosta.technoalex" target="_blank" rel="noopener noreferrer">
-                    InventariosTA
-                </a>
-                — Descárgala en Google Play
+    <!-- PIE DE PÁGINA Y PROMOCIÓN INVENTARIOSTA -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <!-- TARJETA CTA DESTACADA PARA DESCARGAR INVENTARIOSTA -->
+            <div class="app-cta-banner">
+                <div class="cta-content">
+                    <div class="cta-badge">
+                        <span class="cta-badge-dot"></span> Potenciado por InventariosTA
+                    </div>
+                    <h3 class="cta-title">¿Tienes un negocio o emprendimiento?</h3>
+                    <p class="cta-desc">
+                        Controla tu inventario en tiempo real, genera reportes, crea tu catálogo web con carrito de compras y recibe pedidos directos a WhatsApp en minutos.
+                    </p>
+                    <div class="cta-highlights">
+                        <span class="highlight-pill">✓ Control de Stock y Ventas</span>
+                        <span class="highlight-pill">✓ Catálogo y Tienda Web</span>
+                        <span class="highlight-pill">✓ Pedidos WhatsApp y Facturación</span>
+                    </div>
+                </div>
+                <div class="cta-action">
+                    <a href="https://play.google.com/store/apps/details?id=com.inventariosta.technoalex" target="_blank" rel="noopener noreferrer" class="google-play-card-btn">
+                        <svg class="play-icon" viewBox="0 0 24 24" width="32" height="32" fill="none">
+                            <path d="M3.609 1.814L13.793 12 3.61 22.186A2.373 2.373 0 0 1 3 20.509V3.491c0-.65.234-1.246.609-1.677z" fill="#00E676"/>
+                            <path d="M17.18 8.613L4.914.887A2.17 2.17 0 0 0 3.61 1.814l10.183 10.186 3.387-3.387z" fill="#FFD600"/>
+                            <path d="M3.61 22.186a2.17 2.17 0 0 0 1.304.927l12.266-7.726-3.387-3.387-10.183 10.186z" fill="#FF1744"/>
+                            <path d="M20.574 10.757l-3.394-2.144-3.387 3.387 3.387 3.387 3.394-2.144a1.442 1.442 0 0 0 0-2.486z" fill="#00B0FF"/>
+                        </svg>
+                        <div class="play-btn-text">
+                            <span class="play-sub">DISPONIBLE EN</span>
+                            <span class="play-main">Google Play</span>
+                        </div>
+                    </a>
+                    <span class="cta-subtext">¡Descarga gratis para Android!</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="store-copyright">© <span id="year"></span> <strong>Ejemplo</strong>. Todos los derechos reservados.</p>
+                <p class="app-tagline">
+                    Esta tienda en línea es administrada con la aplicación móvil 
+                    <a href="https://play.google.com/store/apps/details?id=com.inventariosta.technoalex" target="_blank" rel="noopener noreferrer">
+                        <strong>InventariosTA</strong>
+                    </a>.
+                </p>
             </div>
         </div>
     </footer>
@@ -755,9 +976,9 @@
     <!-- SCRIPT DE PRODUCTOS Y CARRITO -->
     <script>
         const CURRENCY = "Q";
-        const WHATSAPP_PHONE = "50248146601";
-        const CONTACT_EMAIL = "cuazzar1@gmail.com";
-        const BUSINESS_NAME = "Ferre";
+        const WHATSAPP_PHONE = "50235224837";
+        const CONTACT_EMAIL = "creativeplanett@gmail.com";
+        const BUSINESS_NAME = "Ejemplo";
 
         // CATÁLOGO DE PRODUCTOS (SIN STOCK)
         const products = [
@@ -765,7 +986,7 @@
     "categoria": "null",
     "clave": "bdoskssb",
     "descripcion": "",
-    "id": 5,
+    "id": 1635,
     "imagen": "",
     "nombre": "Computadora",
     "precio": 1000.0,
@@ -776,7 +997,7 @@
     "categoria": "General",
     "clave": "wh9wi2u",
     "descripcion": "",
-    "id": 4,
+    "id": 1636,
     "imagen": "",
     "nombre": "Nutella",
     "precio": 150.0,
@@ -785,23 +1006,23 @@
   },
   {
     "categoria": "General",
-    "clave": "136493033i",
+    "clave": "PROD-1637",
     "descripcion": "",
-    "id": 2,
+    "id": 1637,
     "imagen": "",
-    "nombre": "Pieza cocacola",
-    "precio": 25.0,
+    "nombre": "Tortrix",
+    "precio": 3.0,
     "tipo": "producto",
     "unidad": "Pieza"
   },
   {
     "categoria": "General",
-    "clave": "PROD-3",
+    "clave": "136493033i",
     "descripcion": "",
-    "id": 3,
+    "id": 1638,
     "imagen": "",
-    "nombre": "Tortrix",
-    "precio": 3.0,
+    "nombre": "cocacola",
+    "precio": 25.0,
     "tipo": "producto",
     "unidad": "Pieza"
   }
