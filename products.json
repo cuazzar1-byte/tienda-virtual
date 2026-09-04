@@ -1,0 +1,46 @@
+[
+  {
+    "categoria": "null",
+    "clave": "bdoskssb",
+    "descripcion": "",
+    "id": 5,
+    "imagen": "",
+    "nombre": "Computadora",
+    "precio": 1000.0,
+    "tipo": "producto",
+    "unidad": "Pieza"
+  },
+  {
+    "categoria": "General",
+    "clave": "wh9wi2u",
+    "descripcion": "",
+    "id": 4,
+    "imagen": "",
+    "nombre": "Nutella",
+    "precio": 150.0,
+    "tipo": "producto",
+    "unidad": "Pieza"
+  },
+  {
+    "categoria": "General",
+    "clave": "136493033i",
+    "descripcion": "",
+    "id": 2,
+    "imagen": "",
+    "nombre": "Pieza cocacola",
+    "precio": 25.0,
+    "tipo": "producto",
+    "unidad": "Pieza"
+  },
+  {
+    "categoria": "General",
+    "clave": "PROD-3",
+    "descripcion": "",
+    "id": 3,
+    "imagen": "",
+    "nombre": "Tortrix",
+    "precio": 3.0,
+    "tipo": "producto",
+    "unidad": "Pieza"
+  }
+]
