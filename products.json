@@ -23,6 +23,17 @@
   },
   {
     "categoria": "General",
+    "clave": "PROD-3",
+    "descripcion": "",
+    "id": 3,
+    "imagen": "",
+    "nombre": "Tortrix",
+    "precio": 3.0,
+    "tipo": "producto",
+    "unidad": "Pieza"
+  },
+  {
+    "categoria": "General",
     "clave": "136493033i",
     "descripcion": "",
     "id": 4,
