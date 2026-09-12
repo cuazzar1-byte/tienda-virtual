@@ -1,6 +1,6 @@
 [
   {
-    "categoria": "null",
+    "categoria": "",
     "clave": "bdoskssb",
     "descripcion": "",
     "id": 1,
@@ -11,7 +11,7 @@
     "unidad": "Pieza"
   },
   {
-    "categoria": "General",
+    "categoria": "",
     "clave": "wh9wi2u",
     "descripcion": "",
     "id": 2,
@@ -22,7 +22,7 @@
     "unidad": "Pieza"
   },
   {
-    "categoria": "General",
+    "categoria": "",
     "clave": "PROD-3",
     "descripcion": "",
     "id": 3,
@@ -33,7 +33,7 @@
     "unidad": "Pieza"
   },
   {
-    "categoria": "General",
+    "categoria": "",
     "clave": "136493033i",
     "descripcion": "",
     "id": 4,
