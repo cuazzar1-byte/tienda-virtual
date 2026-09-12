@@ -1016,11 +1016,7 @@
         <div class="controls">
             <div class="search-box">
                 <span class="search-icon">🔍</span>
-                <input type="text" id="searchInput" placeholder="Buscar por nombre, clave o categoría..." oninput="handleSearch()">
-            </div>
-            
-            <div class="category-pills" id="categoryPills">
-                <!-- Se llenan dinámicamente con JS -->
+                <input type="text" id="searchInput" placeholder="Buscar por nombre o clave..." oninput="handleSearch()">
             </div>
             
         </div>
@@ -1182,13 +1178,13 @@
         const WHATSAPP_PHONE = "50235224837";
         const CONTACT_EMAIL = "creativeplanett@gmail.com";
         const BUSINESS_NAME = "Halcón";
-        const SHOW_CATEGORIES = true;
+        const SHOW_CATEGORIES = false;
         const PAGE_SIZE = 36;
 
         // CATÁLOGO DE PRODUCTOS (SIN STOCK)
         const products = [
   {
-    "categoria": "null",
+    "categoria": "",
     "clave": "bdoskssb",
     "descripcion": "",
     "id": 1,
@@ -1199,7 +1195,7 @@
     "unidad": "Pieza"
   },
   {
-    "categoria": "General",
+    "categoria": "",
     "clave": "wh9wi2u",
     "descripcion": "",
     "id": 2,
@@ -1210,7 +1206,7 @@
     "unidad": "Pieza"
   },
   {
-    "categoria": "General",
+    "categoria": "",
     "clave": "PROD-3",
     "descripcion": "",
     "id": 3,
@@ -1221,7 +1217,7 @@
     "unidad": "Pieza"
   },
   {
-    "categoria": "General",
+    "categoria": "",
     "clave": "136493033i",
     "descripcion": "",
     "id": 4,
