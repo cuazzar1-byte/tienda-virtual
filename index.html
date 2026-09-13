@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #2E7D32;
-            --primary-dark: #1B5E20;
-            --primary-light: #E8F5E9;
+            --primary: #1976D2;
+            --primary-dark: #1565C0;
+            --primary-light: #E3F2FD;
             --accent-green: #10b981;
             --accent-green-dark: #059669;
             --text-main: #0f172a;
@@ -91,7 +91,7 @@
 
         /* HERO / BANNER */
         .hero {
-            background: linear-gradient(135deg, #0D3311 0%, #1B5E20 50%, #2E7D32 100%);
+            background: linear-gradient(135deg, #0B2545 0%, #1565C0 50%, #1976D2 100%);
             color: white;
             padding: 2.75rem 1.25rem;
             text-align: center;
@@ -766,7 +766,7 @@
         }
 
         .app-cta-banner {
-            background: linear-gradient(135deg, #2E7D3233 0%, #0D3311dd 100%);
+            background: linear-gradient(135deg, #1976D233 0%, #0B2545dd 100%);
             border: 1px solid rgba(255, 255, 255, 0.12);
             border-radius: 20px;
             padding: 2.5rem 2.25rem;
@@ -993,10 +993,10 @@
     <header>
         <div class="header-container">
             <div class="brand-info">
-                <img src="images/logo.png" alt="Logo" class="brand-logo">
+                
                 <div class="brand-text">
                     <h1>Halcón</h1>
-                    <p>Articulos y más</p>
+                    <p>Venta de accesorios y ferretería</p>
                 </div>
             </div>
             <div style="display: flex; gap: 0.5rem;">
@@ -1008,7 +1008,7 @@
     <!-- BANNER HERO -->
     <section class="hero">
         <h2>Halcón</h2>
-        <p>Articulos y más</p>
+        <p>Venta de accesorios y ferretería</p>
     </section>
 
     <!-- CONTENIDO PRINCIPAL -->
@@ -1065,7 +1065,7 @@
 
     <!-- BOTÓN FLOTANTE DEL CARRITO -->
     <button class="floating-cart" id="floatingCartBtn" onclick="openCart()">
-        <span>🛒 Mi Pedido</span>
+        <span>Mi Pedido</span>
         <span class="cart-badge" id="cartBadge">0</span>
     </button>
 
@@ -1074,7 +1074,7 @@
         <div class="cart-modal">
             <div class="modal-header">
                 <div style="display: flex; align-items: center; gap: 0.75rem;">
-                    <h3>🛒 Carrito de Compras</h3>
+                    <h3>Carrito de Compras</h3>
                     <button id="btnClearCart" class="btn-clear-cart" onclick="clearCart()" style="display:none;" title="Vaciar todo el carrito">
                         🗑️ Vaciar
                     </button>
@@ -1086,7 +1086,7 @@
             </div>
             <div class="cart-form" style="padding: 0 1.5rem;">
                 <label for="clientName">Nombre del Cliente *</label>
-                <input type="text" id="clientName" placeholder="Ej. Juan Pérez" required>
+                <input type="text" id="clientName" placeholder="Nombre del cliente..." required>
                 <label for="clientAddress">Dirección de entrega / Notas</label>
                 <textarea id="clientAddress" rows="2" placeholder="Ej. Dirección de envío o detalles del pedido..."></textarea>
                 <label for="clientPhone">WhatsApp / Teléfono de Contacto <span id="phoneReqNotice" style="color: #ef4444; font-size: 0.75rem; display: none;">* Obligatorio si envías por correo</span></label>
@@ -1184,6 +1184,7 @@
         const BUSINESS_NAME = "Halcón";
         const SHOW_CATEGORIES = true;
         const PAGE_SIZE = 36;
+        const ALL_CATEGORIES_LABEL = "Todas las Categorías";
 
         // CATÁLOGO DE PRODUCTOS (SIN STOCK)
         const products = [
@@ -1192,7 +1193,7 @@
     "clave": "7591594222952",
     "descripcion": "",
     "id": 679,
-    "imagen": "",
+    "imagen": "images/prod_679.jpg",
     "nombre": "**109B CARBONES PAR ESMERILDEWALT Y BLACK \u0026 DECKER",
     "precio": 30.0,
     "tipo": "producto",
@@ -1203,7 +1204,7 @@
     "clave": "7591594265157",
     "descripcion": "",
     "id": 723,
-    "imagen": "",
+    "imagen": "images/prod_723.jpg",
     "nombre": "**178B CARBONES DE ASPIRADORA RIGID",
     "precio": 45.0,
     "tipo": "producto",
@@ -1443,7 +1444,7 @@
   {
     "categoria": "TRUPER",
     "clave": "JDOSNDVS",
-    "descripcion": "",
+    "descripcion": "260.88",
     "id": 1518,
     "imagen": "",
     "nombre": "100250 COMBO PULIDORA ERGO PRO TRUPER",
@@ -1465,7 +1466,7 @@
   {
     "categoria": "TRUPER",
     "clave": "1JFJDOSNENE",
-    "descripcion": "",
+    "descripcion": "248.02",
     "id": 1439,
     "imagen": "",
     "nombre": "100291 COMBO ROTOMARTILLO BROCAS Y DESARMADOR TRUP",
@@ -1476,7 +1477,7 @@
   {
     "categoria": "TRUPER",
     "clave": "UEIWIWJWJ",
-    "descripcion": "",
+    "descripcion": "423.76",
     "id": 1440,
     "imagen": "",
     "nombre": "100502 CEPILLO ELECTRICO PROFESIONAL TRUPER",
@@ -1641,7 +1642,7 @@
   {
     "categoria": "TRUPER",
     "clave": "HSODBDBDB",
-    "descripcion": "",
+    "descripcion": "656.91",
     "id": 1502,
     "imagen": "",
     "nombre": "101594 HIDROLAVADORA 1800 PSI CON JABONERA TRUPER",
@@ -1938,7 +1939,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206625453",
-    "descripcion": "",
+    "descripcion": "Uso escolar o profesional, mide corrinte alterna, continuidad, corriente continua, amperaje, resistencia, checador de trasistores.",
     "id": 946,
     "imagen": "",
     "nombre": "10401 MULTIMETRO DIGITAL TRUPER",
@@ -1949,7 +1950,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206653029",
-    "descripcion": "",
+    "descripcion": "Para ajuste de discos en una esmeriladora o pulidora, tambien se usa su se les perdio la pieza original.",
     "id": 669,
     "imagen": "",
     "nombre": "10544 TUERCA DISCO PARA PULIDORA ESMERILADORA T",
@@ -2004,7 +2005,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240624721",
-    "descripcion": "",
+    "descripcion": "Para maquinas de sierra de sable o sosa corta madera, metal, plastico y materiales similares.",
     "id": 599,
     "imagen": "",
     "nombre": "10790 SEGUETAS SIERRA DE SABLE 6\"",
@@ -2037,7 +2038,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240653615",
-    "descripcion": "",
+    "descripcion": "Para cortar grama",
     "id": 1052,
     "imagen": "",
     "nombre": "10975 DESBROZADORA 440 WATTS",
@@ -2070,7 +2071,7 @@
   {
     "categoria": "TRUPER",
     "clave": "23839393",
-    "descripcion": "",
+    "descripcion": "548.39   394",
     "id": 1632,
     "imagen": "",
     "nombre": "11004 SIERRA CIRCULAR PROFESIONAL 7 1/4\" 1750W",
@@ -2092,7 +2093,7 @@
   {
     "categoria": "TRUPER",
     "clave": "HDISJSBSB",
-    "descripcion": "",
+    "descripcion": "68",
     "id": 764,
     "imagen": "",
     "nombre": "11098 PISTOLA DE RETOQUE TRUPER METAL 45 PSI",
@@ -2235,7 +2236,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240675020",
-    "descripcion": "",
+    "descripcion": "963",
     "id": 1225,
     "imagen": "",
     "nombre": "11787 SOLDADORA INVERSORA 130A. 220V",
@@ -2290,7 +2291,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240671022",
-    "descripcion": "",
+    "descripcion": "Luego a 260.75",
     "id": 1244,
     "imagen": "",
     "nombre": "11897 JUEGO DE 12BROCAS Y3 CINCELES TRUPER",
@@ -2411,7 +2412,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240600688",
-    "descripcion": "",
+    "descripcion": "798.24",
     "id": 1256,
     "imagen": "",
     "nombre": "12092 ASPIRADORA 6 GALONES",
@@ -2422,7 +2423,7 @@
   {
     "categoria": "TRUPER",
     "clave": "HDJSBSBS",
-    "descripcion": "",
+    "descripcion": "692",
     "id": 1417,
     "imagen": "",
     "nombre": "12092 ASPIRADORA DE 6 GALONES TRUPER",
@@ -2433,7 +2434,7 @@
   {
     "categoria": "TRUPER",
     "clave": "6282026",
-    "descripcion": "",
+    "descripcion": "964   811  839.51  818.29 881 907  846.24",
     "id": 731,
     "imagen": "",
     "nombre": "12093 ASPIRADORA DE 12 GALONES TRUPER",
@@ -2499,7 +2500,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240669654",
-    "descripcion": "",
+    "descripcion": "169.51",
     "id": 539,
     "imagen": "",
     "nombre": "12129 PISTOLA PARA PINTAR DE GRAVEDAD 1.7MM TRUPER",
@@ -2521,7 +2522,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240672401",
-    "descripcion": "",
+    "descripcion": "Q12.46",
     "id": 536,
     "imagen": "",
     "nombre": "12153 PUNTAS DE 3\" PH2",
@@ -2554,7 +2555,7 @@
   {
     "categoria": "TRUPER",
     "clave": "JDOSOSBSBWB",
-    "descripcion": "",
+    "descripcion": "790",
     "id": 1454,
     "imagen": "",
     "nombre": "12496 DESBROZADORA GASOLINA TRUPER 26CC",
@@ -2576,7 +2577,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240666912",
-    "descripcion": "",
+    "descripcion": "409.28",
     "id": 1295,
     "imagen": "",
     "nombre": "12784 ESMERIL DE BANCO 5\" 1/4 HP",
@@ -2587,7 +2588,7 @@
   {
     "categoria": "TRUPER",
     "clave": "EKDIBZLSNSB",
-    "descripcion": "",
+    "descripcion": "543.24",
     "id": 1436,
     "imagen": "",
     "nombre": "12785 ESMERIL DE BANCO DE 6\" TRUPER",
@@ -2598,7 +2599,7 @@
   {
     "categoria": "TRUPER",
     "clave": "627291926",
-    "descripcion": "",
+    "descripcion": "608",
     "id": 1355,
     "imagen": "",
     "nombre": "12786 ESMERIL DE BANCO 8\" 3/4 HP",
@@ -2631,7 +2632,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240673279",
-    "descripcion": "",
+    "descripcion": "455.45",
     "id": 1375,
     "imagen": "",
     "nombre": "12872 ESMERILADORA DE 950 WATTS 4 1/2\" DE GATIO",
@@ -2653,7 +2654,7 @@
   {
     "categoria": "TRUPER",
     "clave": "GKXTI",
-    "descripcion": "",
+    "descripcion": "2799   2491.71",
     "id": 1393,
     "imagen": "",
     "nombre": "12908 HIDROLAVADORA 2800 PSI TRUPER",
@@ -2664,7 +2665,7 @@
   {
     "categoria": "TRUPER",
     "clave": "YE9SSBW",
-    "descripcion": "",
+    "descripcion": "5985.45",
     "id": 1416,
     "imagen": "",
     "nombre": "12910 HIDROLAVADORA 4000 PSI TRUPER",
@@ -2697,7 +2698,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240623403",
-    "descripcion": "",
+    "descripcion": "19",
     "id": 645,
     "imagen": "",
     "nombre": "13095 CARBONES DE CEPILLO",
@@ -2719,7 +2720,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240668183",
-    "descripcion": "",
+    "descripcion": "Para 220 y 110 v hasta 250 amperios",
     "id": 1054,
     "imagen": "",
     "nombre": "13163 COMBO SOLDADORA DE ARCO",
@@ -2730,7 +2731,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240635925",
-    "descripcion": "",
+    "descripcion": "Varios estilos martillo, barreno, llave mecánico, pala, cerrucho, destornillador, alicate. Bienen echis en acero. Buena calidad.",
     "id": 370,
     "imagen": "",
     "nombre": "13337 LLAVEROS TRUPER VARIOS ESTILOS",
@@ -2741,7 +2742,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240635338",
-    "descripcion": "",
+    "descripcion": "Cepel 3-1/4A3",
     "id": 1116,
     "imagen": "",
     "nombre": "13433 CUCHILLAS CEPILLO ELECTRICO REPUESTO",
@@ -2763,7 +2764,7 @@
   {
     "categoria": "TRUPER",
     "clave": "HDUS9ABSJWOWJ",
-    "descripcion": "",
+    "descripcion": "557",
     "id": 1442,
     "imagen": "",
     "nombre": "13442 CEPILLO ELECTRICO INDUSTRIAL 720W",
@@ -2774,7 +2775,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240673262",
-    "descripcion": "",
+    "descripcion": "304.99",
     "id": 1296,
     "imagen": "",
     "nombre": "13870 ESMERILADORA PULIDORA 41/2\" 800W TRUPER INDU",
@@ -2829,7 +2830,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240654032",
-    "descripcion": "",
+    "descripcion": "559.48  607",
     "id": 887,
     "imagen": "",
     "nombre": "14012 ESMERILADORA PULIDORA 7\" 2100W TRUPER",
@@ -2840,7 +2841,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240654421",
-    "descripcion": "",
+    "descripcion": "209",
     "id": 641,
     "imagen": "",
     "nombre": "14013 ESMERILADORA PULIDORA 4 1/2\" 700W TRUPER",
@@ -2884,7 +2885,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206688892",
-    "descripcion": "",
+    "descripcion": "Orejeras para disminucion de ruido de maquinaria o simplemente para no escichar casi nada y tener paz.",
     "id": 891,
     "imagen": "",
     "nombre": "14257 OREJERAS 18 DB PLASTICO ABARANJADAS",
@@ -2928,7 +2929,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206616574",
-    "descripcion": "",
+    "descripcion": "Este articulo se vende por caja completa que trae 26 o 28 electrodos a Q50 o por unidad a Q2 cada electrodo. La caja trae un kilogramo.",
     "id": 886,
     "imagen": "",
     "nombre": "14363 ELECTRODO 1/8 3.1 MM E7018",
@@ -2972,7 +2973,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206696118",
-    "descripcion": "",
+    "descripcion": "Chaleco para andar en carreteras o en trabajos de construccion con doble forro para mayor durabilidad.",
     "id": 892,
     "imagen": "",
     "nombre": "14426 CHALECO REFLECTIVO DE SEGURIDAD",
@@ -2983,7 +2984,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206627921",
-    "descripcion": "",
+    "descripcion": "2268 kg tension máxima",
     "id": 1083,
     "imagen": "",
     "nombre": "14432 ARNES DE CUERPO COMPLETO 1 ANILLO",
@@ -2994,7 +2995,7 @@
   {
     "categoria": "TRUPER",
     "clave": "DOSJSVDLWL",
-    "descripcion": "",
+    "descripcion": "94.74",
     "id": 1589,
     "imagen": "",
     "nombre": "14500 EXTRACTORES DE POLEAS, 3 QUIJADAS",
@@ -3027,7 +3028,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240641865",
-    "descripcion": "",
+    "descripcion": "Taladro rotomartillo  truper velocidad variable, reversible, barilla de control de profundidad, mango auxiliar. Profesional. 30 min por 15 de descanso.",
     "id": 893,
     "imagen": "",
     "nombre": "14659 TALADRO ROTOMARTILLO DE 850 WATTS",
@@ -3093,7 +3094,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240650300",
-    "descripcion": "",
+    "descripcion": "Incluye pistola de 20 a 50 psi 344.7 kPa., manguera de 5 metros (15007, 19000, 19013, 19082)",
     "id": 1080,
     "imagen": "",
     "nombre": "15007  COMPRESOR 50 LITROS",
@@ -3104,7 +3105,7 @@
   {
     "categoria": "CONINCA",
     "clave": "1501",
-    "descripcion": "",
+    "descripcion": "Para cable de TV",
     "id": 18,
     "imagen": "",
     "nombre": "1501 CONECTOR PARA CABLE RG-59",
@@ -3148,7 +3149,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240664963",
-    "descripcion": "",
+    "descripcion": "Presición 1gq",
     "id": 491,
     "imagen": "",
     "nombre": "15160 BASCULA DIGITAL PESA 5 KG 11 LIBRAS",
@@ -3181,7 +3182,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240641315",
-    "descripcion": "",
+    "descripcion": "517  antes 440 watts",
     "id": 1174,
     "imagen": "",
     "nombre": "15383 PISTOLA PARA PINTAR ELECTRICA TRUPER 600W",
@@ -3192,7 +3193,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240607182",
-    "descripcion": "",
+    "descripcion": "260",
     "id": 998,
     "imagen": "",
     "nombre": "15420 SIERRA CALADORA TRUPER 550W",
@@ -3203,7 +3204,7 @@
   {
     "categoria": "TRUPER",
     "clave": "JRIDJDB",
-    "descripcion": "",
+    "descripcion": "330",
     "id": 815,
     "imagen": "",
     "nombre": "15423 CALADORA DE 750 WATTS TRUPER",
@@ -3225,7 +3226,7 @@
   {
     "categoria": "TRUPER",
     "clave": "6382012628",
-    "descripcion": "",
+    "descripcion": "Antes a 1471.99   1638.38   1780.31 1833.72 1742 1888",
     "id": 1326,
     "imagen": "",
     "nombre": "15656 COMPRESOR AIRE LUBRICADO 80LT",
@@ -3236,7 +3237,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240641841",
-    "descripcion": "",
+    "descripcion": "Truper taladro rotomartillo profesional 30 min por 15 descanso por 3 horas.  600 watts de 1/2\" 4.7 amperios con mango auxiliar. 208   185.12",
     "id": 900,
     "imagen": "",
     "nombre": "15679 ROTOMARTILLO TALADRO TRUPER 1/2\" 650 WATTS",
@@ -3280,7 +3281,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240658542",
-    "descripcion": "",
+    "descripcion": "1283   1214.85",
     "id": 755,
     "imagen": "",
     "nombre": "16095 COMPRESOR KIT 2021 50 LITROS TRUPER",
@@ -3324,7 +3325,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206666098",
-    "descripcion": "",
+    "descripcion": "Para hacer filo manual o con maquina. Grano 36.",
     "id": 910,
     "imagen": "",
     "nombre": "16381 CHAIRA PIEDRA DE AFILAR DISCO",
@@ -3335,7 +3336,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206666104",
-    "descripcion": "",
+    "descripcion": "Grano 60 para afilar manual o con maquina.",
     "id": 911,
     "imagen": "",
     "nombre": "16382 PIEDRA DE AFILAR CHAIRA GRANO 60 GRADO",
@@ -3368,7 +3369,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206626177",
-    "descripcion": "",
+    "descripcion": "1011.3b  726.18",
     "id": 1396,
     "imagen": "",
     "nombre": "16610 ROUTER INDUSTRIAL TRUPER 1200W 28K RPM 9.4A",
@@ -3379,7 +3380,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240634744",
-    "descripcion": "",
+    "descripcion": "489.89",
     "id": 1261,
     "imagen": "",
     "nombre": "16626 PULIDORA DE AUTOS 7\"\" 1200W TRUPER",
@@ -3434,7 +3435,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206629789",
-    "descripcion": "",
+    "descripcion": "258.27",
     "id": 1008,
     "imagen": "",
     "nombre": "16682 LIJADORA ORBITAL DE 1/4 PROFESIONAL",
@@ -3445,7 +3446,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240649847",
-    "descripcion": "",
+    "descripcion": "Para cortar metal, pulidora esmeriladora, 4 1/2 , 800 watts, 30 min por 15 de descanso, 3 horas de uso profesional. 246.4   195.8",
     "id": 898,
     "imagen": "",
     "nombre": "16683 ESMERILADORA PULIDORA DE 1 1/4 TRUPER 800 W",
@@ -3467,7 +3468,7 @@
   {
     "categoria": "TRUPER",
     "clave": "6292028263",
-    "descripcion": "",
+    "descripcion": "723.27  782",
     "id": 1352,
     "imagen": "",
     "nombre": "16714 BATIDORA 1/2\" 1050W MEZCLADORA",
@@ -3478,7 +3479,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206621547",
-    "descripcion": "",
+    "descripcion": "92",
     "id": 1065,
     "imagen": "",
     "nombre": "16820 MARTILLO EXPERT 20 ONZAS MANGO NEOPRENO",
@@ -3489,7 +3490,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206621554",
-    "descripcion": "",
+    "descripcion": "98",
     "id": 1371,
     "imagen": "",
     "nombre": "16821 MARTILLO FORJADO 1 PIEZA UÑA RECTA 20 OZ",
@@ -3544,7 +3545,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240656104",
-    "descripcion": "",
+    "descripcion": "136.48",
     "id": 1023,
     "imagen": "",
     "nombre": "17033 DESTORNILLADOR RECARGABLE INALAMBRICO 3,6V",
@@ -3566,7 +3567,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240660057",
-    "descripcion": "",
+    "descripcion": "Para evitar taladrar paredes pega: cuadros, cosas que pesen hasta 4.4 libras en casi cualquier superficie.",
     "id": 888,
     "imagen": "",
     "nombre": "17290 CUADRO DE MONTAJE ADHESIVO",
@@ -3599,7 +3600,7 @@
   {
     "categoria": "TRUPER",
     "clave": "6282920",
-    "descripcion": "",
+    "descripcion": "Q23.82",
     "id": 1378,
     "imagen": "",
     "nombre": "17369 PINZA MINIATURA PUNTA DE AGUJA",
@@ -3610,7 +3611,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206640395",
-    "descripcion": "",
+    "descripcion": "Se compro a 24.97",
     "id": 1058,
     "imagen": "",
     "nombre": "17372 MINI PINZA ELECTRICISTA CONFORT GRIP",
@@ -3621,7 +3622,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240636557",
-    "descripcion": "",
+    "descripcion": "283",
     "id": 1064,
     "imagen": "",
     "nombre": "17449 MOTO TOOL PROFESIONAL 150W",
@@ -3775,7 +3776,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240647904",
-    "descripcion": "",
+    "descripcion": "62.76",
     "id": 762,
     "imagen": "",
     "nombre": "18024 LLAVE CHUCHO TRUPER",
@@ -3786,7 +3787,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240647027",
-    "descripcion": "",
+    "descripcion": "Rotomartillo taladro inalambrico profesional de 1/2 \" 2 velocidades, led de linterna, atornillador, incluye cargador y una bteria de ion litio, ademas de una punta doble de cruz y castigadera. 18  voltios antes Q719",
     "id": 894,
     "imagen": "",
     "nombre": "18155 ROTOMARTILLO INALAMBRICO BATERIA LITIO 20V 1",
@@ -3797,7 +3798,7 @@
   {
     "categoria": "TRUPER",
     "clave": "62729282",
-    "descripcion": "",
+    "descripcion": "244.34",
     "id": 1354,
     "imagen": "",
     "nombre": "18156 ESMERILADORA ERGO PRO 800W 4 1/2\"",
@@ -3819,7 +3820,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240651918",
-    "descripcion": "",
+    "descripcion": "Antes Q1174",
     "id": 1262,
     "imagen": "",
     "nombre": "18297 HIDROLAVADORA ELECTRICA 2000 PSI",
@@ -3863,7 +3864,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206678848",
-    "descripcion": "",
+    "descripcion": "89",
     "id": 740,
     "imagen": "",
     "nombre": "19000 JARRILLA PISTOLA SUCCION 1 LT TRUPER",
@@ -3885,7 +3886,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206602263",
-    "descripcion": "",
+    "descripcion": "65",
     "id": 1139,
     "imagen": "",
     "nombre": "19014 MANGUERA DEPVC PRA COMPRESOR 10M 1/4\" 300PSI",
@@ -4138,7 +4139,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240625773",
-    "descripcion": "",
+    "descripcion": "Pasta para soldar 60 gramos color blanco, cuida la punta del cautín y no deja residuos como la pasta amarilla",
     "id": 368,
     "imagen": "",
     "nombre": "19337 PASTA PARA SOLDAR TRUPER",
@@ -4160,7 +4161,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206656174",
-    "descripcion": "",
+    "descripcion": "Caja para erramientas color gris truper de 19\" con compartimento de bandeja interna.",
     "id": 902,
     "imagen": "",
     "nombre": "19779 CAJA DE HERRAMIENTAS 19\" TRUPER",
@@ -4182,7 +4183,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7501206668665",
-    "descripcion": "",
+    "descripcion": "Organizador de piezas pequeñas",
     "id": 601,
     "imagen": "",
     "nombre": "19896 ORGANIZADOR TRUPER GABETS",
@@ -4204,7 +4205,7 @@
   {
     "categoria": "IMPRODUCTIVO",
     "clave": "ESTANTE",
-    "descripcion": "",
+    "descripcion": "272.93",
     "id": 700,
     "imagen": "",
     "nombre": "19943 ESTANTE USO RUDO 5 PIEZAS 120 LB POR COMPART",
@@ -4402,7 +4403,7 @@
   {
     "categoria": "TOLSEN",
     "clave": "75062406113473",
-    "descripcion": "",
+    "descripcion": "Caja de herramientas pretul color negro conpartimentos internos de bandeja. 19\"",
     "id": 903,
     "imagen": "",
     "nombre": "20533 CAJA DE HERRAMIENTAS PRETUL 19\"",
@@ -4567,7 +4568,7 @@
   {
     "categoria": "PRETUL",
     "clave": "7501206635575",
-    "descripcion": "",
+    "descripcion": "24.68",
     "id": 1422,
     "imagen": "",
     "nombre": "21857 JUEGO LLAVES ALLEN MM PRETUL",
@@ -4666,7 +4667,7 @@
   {
     "categoria": "PRETUL",
     "clave": "7506240639008",
-    "descripcion": "",
+    "descripcion": "Para soldar con estaño o para uso general.",
     "id": 883,
     "imagen": "",
     "nombre": "22810 CAUTIN 60W",
@@ -4787,7 +4788,7 @@
   {
     "categoria": "PRETUL",
     "clave": "7501206698266",
-    "descripcion": "",
+    "descripcion": "Cascos ultra ressistentes pretul. Azul, blanco, verde, amarillo.",
     "id": 895,
     "imagen": "",
     "nombre": "24039 CASCO VARIOS COLORES",
@@ -4798,7 +4799,7 @@
   {
     "categoria": "PRETUL",
     "clave": "7506240639794",
-    "descripcion": "",
+    "descripcion": "Rotomartillo taladro domestico pretul 1/2\"  20 min x 10 de descanso por 1.5 horas. Variable velocidad y doble velocidad.",
     "id": 901,
     "imagen": "",
     "nombre": "24058 ROTOMARTILLO TALADRO DOMESTICO PRETUL 1/2\"",
@@ -4897,7 +4898,7 @@
   {
     "categoria": "PRETUL",
     "clave": "36202376382",
-    "descripcion": "",
+    "descripcion": "48.94",
     "id": 1341,
     "imagen": "",
     "nombre": "25052 CAJA COSMETIQUERA 14\"",
@@ -5007,7 +5008,7 @@
   {
     "categoria": "PRETUL",
     "clave": "7506240642053",
-    "descripcion": "",
+    "descripcion": "265.84",
     "id": 1084,
     "imagen": "",
     "nombre": "26042 TORNILLO DE BANCO 5\"",
@@ -5095,7 +5096,7 @@
   {
     "categoria": "PRETUL",
     "clave": "7506240630586",
-    "descripcion": "",
+    "descripcion": "Pintura negro brillante en aerosol 12.44",
     "id": 889,
     "imagen": "",
     "nombre": "27170 SPRAY NEGRO PRETUL 300ML 11OZ",
@@ -5117,7 +5118,7 @@
   {
     "categoria": "PRETUL",
     "clave": "73IWJWBWNK",
-    "descripcion": "",
+    "descripcion": "13.50",
     "id": 1443,
     "imagen": "",
     "nombre": "27172 SPRAY NEGRO MATE PRETUL",
@@ -5139,7 +5140,7 @@
   {
     "categoria": "PRETUL",
     "clave": "CROMO",
-    "descripcion": "",
+    "descripcion": "15.92",
     "id": 1630,
     "imagen": "",
     "nombre": "27177 SPRAY CROMO GRIS PLATEADO MATE PRETUL",
@@ -5205,7 +5206,7 @@
   {
     "categoria": "PRETUL",
     "clave": "UDJSLSB",
-    "descripcion": "",
+    "descripcion": "3780.11    3893.51",
     "id": 871,
     "imagen": "",
     "nombre": "28147 CONCRETERA DE 1/2 SACO PRETUL",
@@ -5348,7 +5349,7 @@
   {
     "categoria": "TOLSEN",
     "clave": "6933528730194",
-    "descripcion": "",
+    "descripcion": "Tijera multiusos, cocina, sastreria etc. Con dientes y ultra higienico.",
     "id": 904,
     "imagen": "",
     "nombre": "30045 TIJERA MULTI USOS TOLSEN",
@@ -5920,7 +5921,7 @@
   {
     "categoria": "FIERO",
     "clave": "7506240601586",
-    "descripcion": "",
+    "descripcion": "Solo tuerca 0.28 \u003d 1",
     "id": 29,
     "imagen": "",
     "nombre": "44578 TORNILLO 3/8 X 2\" ACERADO",
@@ -5931,7 +5932,7 @@
   {
     "categoria": "FIERO",
     "clave": "7506240601708",
-    "descripcion": "",
+    "descripcion": "Solo tuerca .17\u003d 1",
     "id": 90,
     "imagen": "",
     "nombre": "44590 TORNILLO 7/16 X 4\" ACERADO",
@@ -5975,7 +5976,7 @@
   {
     "categoria": "FIERO",
     "clave": "7506240641025",
-    "descripcion": "",
+    "descripcion": "Solo tuerca .88\u003d 2",
     "id": 333,
     "imagen": "",
     "nombre": "44706 TORNILLO 3/4 X 4\" ACERADO",
@@ -6008,7 +6009,7 @@
   {
     "categoria": "FIERO",
     "clave": "7506240641056",
-    "descripcion": "",
+    "descripcion": "Solo tuerca 2",
     "id": 334,
     "imagen": "",
     "nombre": "44754 TORNILLO 3/4 X 6\"",
@@ -6074,7 +6075,7 @@
   {
     "categoria": "FOSET",
     "clave": "CODOCPVC",
-    "descripcion": "",
+    "descripcion": "3.93",
     "id": 1140,
     "imagen": "",
     "nombre": "45082 CODO 90 DE CPVC, 13MM\" 1/2\"",
@@ -6129,7 +6130,7 @@
   {
     "categoria": "DECORABAÑO",
     "clave": "COPLACPVC",
-    "descripcion": "",
+    "descripcion": "5.27",
     "id": 215,
     "imagen": "",
     "nombre": "45126 COPLE DE CPVC, 13MM\" 1/2\"",
@@ -6217,7 +6218,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7506240653837",
-    "descripcion": "",
+    "descripcion": "39",
     "id": 1036,
     "imagen": "",
     "nombre": "46044 PILA RECARG CARGADOR BAT AA Y 9V 2 BATERIAS",
@@ -6228,7 +6229,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7506240653844",
-    "descripcion": "",
+    "descripcion": "Cargador con baterias recargables doble aa, pero tambien carga baterias triple aaa y baterias cuadradas.",
     "id": 881,
     "imagen": "",
     "nombre": "46045 CARGADOR DE BATERIA AA AAA Y CUADRADA",
@@ -6250,7 +6251,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "46093",
-    "descripcion": "",
+    "descripcion": "Para television, universal soporta peso y televisores de 26\" a 65\" de tamaño. Incluye accesorios de intalación ( tornilleria, arandelas  etc).",
     "id": 899,
     "imagen": "",
     "nombre": "46093 SOPORTE PARA TV AJUSTABLE 26\" -65\"",
@@ -6283,7 +6284,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "GOHCJNBV",
-    "descripcion": "",
+    "descripcion": "46",
     "id": 786,
     "imagen": "",
     "nombre": "46124 VARILLA DE COBRE 1/2\" X 1.5 MTS TRUPER",
@@ -6404,7 +6405,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7506240618836",
-    "descripcion": "",
+    "descripcion": "Cable hdmi para televisores, pantallas, ez cast, impresoras y tecnología en general",
     "id": 880,
     "imagen": "",
     "nombre": "46266 CABLE HDMI",
@@ -6448,7 +6449,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7501206657676",
-    "descripcion": "",
+    "descripcion": "Bateria doble aa para uso general, bateria de carbón",
     "id": 878,
     "imagen": "",
     "nombre": "46309 BLISTER BATERIA AA CARBON",
@@ -6459,7 +6460,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7501206657706",
-    "descripcion": "",
+    "descripcion": "Bateria de 9 volts puede usarse para instrumemtos, linternas, microfonos, experimentos de electronica etc",
     "id": 876,
     "imagen": "",
     "nombre": "46312 BATERIA CUADRADA 9V",
@@ -6470,7 +6471,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7501206657621",
-    "descripcion": "",
+    "descripcion": "Bateria alacalina doble aa larga duracion , uso general. Supera a la duracell",
     "id": 879,
     "imagen": "",
     "nombre": "46315 BLISTER BATERIA AA ALCALINA",
@@ -6481,7 +6482,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7501206657638",
-    "descripcion": "",
+    "descripcion": "Bateria triple aaa para aparatos pequeños o uso general de larga duración",
     "id": 877,
     "imagen": "",
     "nombre": "46316 BLISTER BATERIA AAA ALCALINA",
@@ -6514,7 +6515,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7501206657669",
-    "descripcion": "",
+    "descripcion": "Bateria para uso general, experimentos, aparatos, larga duracion, supera a la duracell",
     "id": 122,
     "imagen": "",
     "nombre": "46319 BATERIA CUADRADA 9V ALCALINA",
@@ -6558,7 +6559,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7506240635345",
-    "descripcion": "",
+    "descripcion": "Para automatizar el encendido de lamaparas o de aparatos con presencia humana, se puede variar o programar el tuenpo que queda encendido despues de una detección.",
     "id": 896,
     "imagen": "",
     "nombre": "46594 SENSOR DE MOVIMIENTO",
@@ -6569,7 +6570,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7506240621560",
-    "descripcion": "",
+    "descripcion": "Para tiendas y locales varios, avisa cuando entra una persona",
     "id": 626,
     "imagen": "",
     "nombre": "46595 SENSOR DE MOVIMIENTO TIMBRE",
@@ -6580,7 +6581,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7501206690543",
-    "descripcion": "",
+    "descripcion": "Para uso doméstico compatible con 110 volts linea general.",
     "id": 884,
     "imagen": "",
     "nombre": "46605 TIMBRE DING DONG 1 TONO",
@@ -6602,7 +6603,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7506240622338",
-    "descripcion": "",
+    "descripcion": "58.4",
     "id": 709,
     "imagen": "",
     "nombre": "46630 TIMBRE INALAMBRICO 100MTS  36 TONOS",
@@ -6635,7 +6636,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7501206661697",
-    "descripcion": "",
+    "descripcion": "Regleta uso rudo conecta maquinas, amplificadores y mas.",
     "id": 925,
     "imagen": "",
     "nombre": "47183 REGLETA FLAUTA USO RUDO",
@@ -6899,7 +6900,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "48051",
-    "descripcion": "",
+    "descripcion": "Para uso industrial, uso rudo, 30 metros con cable tsj es decir cable triple de alto calibre para soportar: maquinas, soldadores equipos de audio etc.",
     "id": 600,
     "imagen": "",
     "nombre": "48051 EXTENSION USO RUDO 30 METROS",
@@ -7097,7 +7098,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7506240625711",
-    "descripcion": "",
+    "descripcion": "Temporizador, sirve para apagar y encender aparatos, luces y mas mediante una espiga y una previa programación, no usa baterias.",
     "id": 882,
     "imagen": "",
     "nombre": "48386 TEMPORIZADOR",
@@ -7174,7 +7175,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7506240638971",
-    "descripcion": "",
+    "descripcion": "Para extraer olores y tenrr ambiente limpio",
     "id": 673,
     "imagen": "",
     "nombre": "48531 EXTRACTOR DE AIRE 5\" EXTRACTOR DE OLORES",
@@ -7306,7 +7307,7 @@
   {
     "categoria": "FOSET",
     "clave": "7506240600848",
-    "descripcion": "",
+    "descripcion": "Purificador con filtro incluido para tener agua pura en instantes, incliye accesorios de montaje. Cartucho de carbon activado integrado de plata coloidal.",
     "id": 897,
     "imagen": "",
     "nombre": "49217 PURIFICADOR DE AGUA 99.99%",
@@ -7625,7 +7626,7 @@
   {
     "categoria": "TRUPER",
     "clave": "7506240654865",
-    "descripcion": "",
+    "descripcion": "Se compro a 130",
     "id": 1057,
     "imagen": "",
     "nombre": "61038 PLAYERA",
@@ -7823,7 +7824,7 @@
   {
     "categoria": "TOLSEN",
     "clave": "6933528777595",
-    "descripcion": "",
+    "descripcion": "Precio costo de caja:131.25  venta caja completa: 225",
     "id": 328,
     "imagen": "",
     "nombre": "75680 CUCHILLAS PARA ROUTER 12 PIEZAS POR UNIDAD",
@@ -7966,7 +7967,7 @@
   {
     "categoria": "TOLSEN",
     "clave": "6933528786368",
-    "descripcion": "",
+    "descripcion": "Para corte de metal uso industrial, 800 watts.",
     "id": 906,
     "imagen": "",
     "nombre": "79721 ESMERILADORA 4 1/2",
@@ -7988,7 +7989,7 @@
   {
     "categoria": "TOLSEN",
     "clave": "TOLSENNN",
-    "descripcion": "",
+    "descripcion": "Sierra circular de 7 1/4 industrial con accesorios para corte a 45 grados, incluye disco y laser oara corte recto. 1500 watts.",
     "id": 907,
     "imagen": "",
     "nombre": "79731 SIERRA CIRCULAR 7 1/4",
@@ -8010,7 +8011,7 @@
   {
     "categoria": "TOLSEN",
     "clave": "6933528786382",
-    "descripcion": "",
+    "descripcion": "Sierra de sable para corte de madera y metal incluye ambas cuchillas es de 1100 watts cuchilla de 6\" uso industrial",
     "id": 905,
     "imagen": "",
     "nombre": "79741 SIERRA DE SABLE SOSO RECIPROCA 9A",
@@ -8043,7 +8044,7 @@
   {
     "categoria": "TOLSEN",
     "clave": "6933528786412",
-    "descripcion": "",
+    "descripcion": "146.77",
     "id": 629,
     "imagen": "",
     "nombre": "79791 PISTOLA DE CALOR TOLSEN",
@@ -8065,7 +8066,7 @@
   {
     "categoria": "TOLSEN",
     "clave": "6933528790006",
-    "descripcion": "",
+    "descripcion": "Gorra para chileriar.",
     "id": 908,
     "imagen": "",
     "nombre": "90001 GORRA TOLSEN",
@@ -8076,7 +8077,7 @@
   {
     "categoria": "STEREN",
     "clave": "7501483188573",
-    "descripcion": "",
+    "descripcion": "Regleta para uso medio si quieren mas potencia  ofrecer una regleta volteck",
     "id": 915,
     "imagen": "",
     "nombre": "905-003 FLAUTA TOMA REGLETA STEREN USO MEDIO",
@@ -8142,7 +8143,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "POT 5K",
-    "descripcion": "",
+    "descripcion": "Para variar resistencia hasta 5k",
     "id": 253,
     "imagen": "",
     "nombre": "A1 O2 POTENCIOMETRO DE 5 K OHMS",
@@ -8615,7 +8616,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "ACIDO",
-    "descripcion": "",
+    "descripcion": "Para placas y otros usos de desvanecimiento de metal como el cobre.",
     "id": 167,
     "imagen": "",
     "nombre": "ACIDO FERRICO 4 OZ",
@@ -8692,7 +8693,7 @@
   {
     "categoria": "SECURITYBOX",
     "clave": "UTP",
-    "descripcion": "",
+    "descripcion": "Para internet, intercomunicadores, redes etc...",
     "id": 983,
     "imagen": "",
     "nombre": "ALAMBRE UTP",
@@ -8835,7 +8836,7 @@
   {
     "categoria": "SUKI LIMON",
     "clave": "2332566681347",
-    "descripcion": "",
+    "descripcion": "85",
     "id": 707,
     "imagen": "",
     "nombre": "APEA20 EXTENSION DE 30 MTS. CON REGLETA LIMON",
@@ -8857,7 +8858,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "ARDUINO",
-    "descripcion": "",
+    "descripcion": "Placa programable para proyectos. Arduino uno. Incluye un cable de impresora azul grande. Los pequños no.",
     "id": 189,
     "imagen": "",
     "nombre": "ARDUINO UNO 1 ORIGINAL",
@@ -8901,7 +8902,7 @@
   {
     "categoria": "EMTOP",
     "clave": "E73801SOWJW",
-    "descripcion": "",
+    "descripcion": "809",
     "id": 753,
     "imagen": "",
     "nombre": "ATORNILLADOR DE IMPACTO INALAMBRICO 20V 2A 1/4\"",
@@ -8978,7 +8979,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "POT 1M",
-    "descripcion": "",
+    "descripcion": "Para variar resistencia hasta 1 m ohms",
     "id": 372,
     "imagen": "",
     "nombre": "B1 02 POTENCIOMETRO DE 1 M OHMS",
@@ -9000,7 +9001,7 @@
   {
     "categoria": "ELECTRONICA BP",
     "clave": "CT008",
-    "descripcion": "",
+    "descripcion": "Para redes",
     "id": 41,
     "imagen": "",
     "nombre": "B3 O1 CONECTOR RJ45",
@@ -9011,7 +9012,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "SERVO",
-    "descripcion": "",
+    "descripcion": "Motor programable con pic o con arduino o con raspeberry pi.",
     "id": 255,
     "imagen": "",
     "nombre": "B3 O2 MICRO SERVO MOTOR 1.8 KG SG90",
@@ -9066,7 +9067,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "FUSIBLE SEGURO 1A",
-    "descripcion": "",
+    "descripcion": "Para evitar que se queme un aparato o fuente de poder.",
     "id": 155,
     "imagen": "",
     "nombre": "B5 O2 FUSIBLE DE 1 AMPERIO 6X30MM",
@@ -9077,7 +9078,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "FUSIBLE SEGURO 10A",
-    "descripcion": "",
+    "descripcion": "Para evitar que se queme un aparato o fuente de poder.",
     "id": 172,
     "imagen": "",
     "nombre": "B5 O2 FUSIBLE DE 10 AMPERIOS 5X20MM",
@@ -9088,7 +9089,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "FUSIBLE SEGURO 3A",
-    "descripcion": "",
+    "descripcion": "Para evitar que se queme un aparato o fuente de poder.",
     "id": 171,
     "imagen": "",
     "nombre": "B5 O2 FUSIBLE DE 3 AMPERIOS 6X30MM",
@@ -9099,7 +9100,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "FUSIBLE SEGURO 5A",
-    "descripcion": "",
+    "descripcion": "Para evitar que se queme un aparato o fuente de poder.",
     "id": 315,
     "imagen": "",
     "nombre": "B5 O2 FUSIBLE DE 5 AMPERIOS 6X30MM",
@@ -9110,7 +9111,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "FUSIBLE SEGURO 7A",
-    "descripcion": "",
+    "descripcion": "Para evitar que se queme un aparato o fuente de poder.",
     "id": 316,
     "imagen": "",
     "nombre": "B5 O2 FUSIBLE DE 7 AMPERIOS 5X20MM",
@@ -9231,7 +9232,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "BARNIZ 1/48 GAL",
-    "descripcion": "",
+    "descripcion": "Para ba4nizar muebles pero necesita de una aplicación de sellador a la madera antes de aplicarlo, hay disponible en marca caiman spray  laca",
     "id": 247,
     "imagen": "",
     "nombre": "BARNIZ MARINIO CARPENTER 1/48 GALON",
@@ -9275,7 +9276,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "BARNIZ 1/32",
-    "descripcion": "",
+    "descripcion": "Para ba4nizar muebles pero necesita de una aplicación de sellador a la madera antes de aplicarlo, hay disponible en marca caiman spray  laca",
     "id": 926,
     "imagen": "",
     "nombre": "BARNIZ MARINO CARPENTER 1/32 GALON",
@@ -9286,7 +9287,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "BARNIZ 1/4 GAL",
-    "descripcion": "",
+    "descripcion": "Para ba4nizar muebles pero necesita de una aplicación de sellador a la madera antes de aplicarlo, hay disponible en marca caiman spray  laca",
     "id": 928,
     "imagen": "",
     "nombre": "BARNIZ MARINO CARPENTER 1/4 GALON",
@@ -9297,7 +9298,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "BARNIZ 1/8 GAL",
-    "descripcion": "",
+    "descripcion": "Para ba4nizar muebles pero necesita de una aplicación de sellador a la madera antes de aplicarlo, hay disponible en marca caiman spray  laca",
     "id": 927,
     "imagen": "",
     "nombre": "BARNIZ MARINO CARPENTER 1/8 GALON",
@@ -9352,7 +9353,7 @@
   {
     "categoria": "ELECTROMA",
     "clave": "2 SOCK",
-    "descripcion": "",
+    "descripcion": "Para reflectores o focos en la interperie, ajustable a diferentes inclinaciones",
     "id": 977,
     "imagen": "",
     "nombre": "BASE PARA FOCOS O REFLECTOR DOBLE",
@@ -9528,7 +9529,7 @@
   {
     "categoria": "CALLE",
     "clave": "HEJDISBEO2L",
-    "descripcion": "",
+    "descripcion": "165",
     "id": 1403,
     "imagen": "",
     "nombre": "BOMBA PARA FUMIGAR MT",
@@ -9704,7 +9705,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "SENSOR PIR",
-    "descripcion": "",
+    "descripcion": "Para detectar movimiento",
     "id": 609,
     "imagen": "",
     "nombre": "C3 O2 MODULO SENSOR PIR MOVIMIENTO",
@@ -9781,7 +9782,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "JACK DC 5.5X2.1MM",
-    "descripcion": "",
+    "descripcion": "Para alimentar aparatos o proyectos con corriente directa de 3 a 12 voltios.",
     "id": 156,
     "imagen": "",
     "nombre": "C5 O2 JACK DE ALIMENTACION DC",
@@ -9814,7 +9815,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "RELE 12 V 10 A",
-    "descripcion": "",
+    "descripcion": "Para swichear con pulsos electricos",
     "id": 465,
     "imagen": "",
     "nombre": "C6 O2 RELEVADOR DE 12 V. 5A.",
@@ -9847,7 +9848,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "DISPLAY",
-    "descripcion": "",
+    "descripcion": "Para dar vuda a los proyectos, se usa como pantalla.",
     "id": 170,
     "imagen": "",
     "nombre": "C8 O1 DISPLAY 2X16 LCD",
@@ -9957,7 +9958,7 @@
   {
     "categoria": "VIAKON",
     "clave": "COAXIAL",
-    "descripcion": "",
+    "descripcion": "Para television o antenas.",
     "id": 924,
     "imagen": "",
     "nombre": "CABLE COAXIAL RG6",
@@ -9979,7 +9980,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "CABLE ELEC HEM HEM ABC",
-    "descripcion": "",
+    "descripcion": "Para conectar modulos o circuitos en general.",
     "id": 22,
     "imagen": "",
     "nombre": "CABLE HEMBRA HEMBRA PARA CONEXIONES",
@@ -9990,7 +9991,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "CABLE HEM MACH ABC",
-    "descripcion": "",
+    "descripcion": "Para conexion de proyectos.",
     "id": 96,
     "imagen": "",
     "nombre": "CABLE HEMBRA MACHO PARA CONEXIONES",
@@ -10001,7 +10002,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "CABLE MACH MACH ABC",
-    "descripcion": "",
+    "descripcion": "Para conexion de proyectos varios",
     "id": 26,
     "imagen": "",
     "nombre": "CABLE MACHO MACHO PARA CONEXIONES",
@@ -10023,7 +10024,7 @@
   {
     "categoria": "VIAKON",
     "clave": "DUPLEX COBRE NUM 12",
-    "descripcion": "",
+    "descripcion": "Para conexiones mas formales y de larga duración como extensiones, focos y mas.",
     "id": 923,
     "imagen": "",
     "nombre": "CABLE PARALELO DE COBRE NUMERO 12",
@@ -10034,7 +10035,7 @@
   {
     "categoria": "VIAKON",
     "clave": "CABLE NUM 8",
-    "descripcion": "",
+    "descripcion": "Para conexiones electricas de uso rudo como duchas eléctricas.",
     "id": 460,
     "imagen": "",
     "nombre": "CABLE THHN/THWN CALIBRE 8",
@@ -10045,7 +10046,7 @@
   {
     "categoria": "ELECTROMA",
     "clave": "TSJ2X12",
-    "descripcion": "",
+    "descripcion": "7.3",
     "id": 343,
     "imagen": "",
     "nombre": "CABLE TSJ 2X12",
@@ -10078,7 +10079,7 @@
   {
     "categoria": "EAGLE",
     "clave": "5601859041746",
-    "descripcion": "",
+    "descripcion": "Para instalciones que necesiten estar aisladas de la interperie o humedad, como; camaras de vigilancia, tecnología etc.",
     "id": 154,
     "imagen": "",
     "nombre": "CAJA ESTANCA INTERPERIE ANTI HUMEDAD CONOS  PLAST",
@@ -10122,7 +10123,7 @@
   {
     "categoria": "IMPRODUCTIVO",
     "clave": "CAMARAS PUESTAS",
-    "descripcion": "",
+    "descripcion": "Son Q 600",
     "id": 619,
     "imagen": "",
     "nombre": "CAMARAS DE VIGI PUESTAS",
@@ -10232,7 +10233,7 @@
   {
     "categoria": "IML",
     "clave": "CAUTIN MADERA",
-    "descripcion": "",
+    "descripcion": "Para soldaduras de estaño pero no es muy recomendable para electronica.",
     "id": 941,
     "imagen": "",
     "nombre": "CAUTIN DE 100 WATTS DE MADERA",
@@ -10243,7 +10244,7 @@
   {
     "categoria": "ASTURIAS",
     "clave": "CANAMOPITAPLOMO",
-    "descripcion": "",
+    "descripcion": "360 yardas 1 libra",
     "id": 7,
     "imagen": "",
     "nombre": "CAÑAMO PITA DE PLOMO #8",
@@ -10276,7 +10277,7 @@
   {
     "categoria": "CONINCA",
     "clave": "CDLNEGROTERMO",
-    "descripcion": "",
+    "descripcion": "150.98",
     "id": 1277,
     "imagen": "",
     "nombre": "CDL5N TERMOCONTRACTIL 5MM NEGRO 600V 125°C",
@@ -10309,7 +10310,7 @@
   {
     "categoria": "CONINCA",
     "clave": "7591594770903",
-    "descripcion": "",
+    "descripcion": "Para cable 18-10 AWG  190.75",
     "id": 1198,
     "imagen": "",
     "nombre": "CDL7N TERMOCONTRACTIL 7MM NEGRO 1/4 600V 125°C",
@@ -10320,7 +10321,7 @@
   {
     "categoria": "CONINCA",
     "clave": "TERMO5838",
-    "descripcion": "",
+    "descripcion": "190.74",
     "id": 1278,
     "imagen": "",
     "nombre": "CDL7R TERMOCONTRACTIL 7MM ROJO 1/4 600V 125°C",
@@ -10331,7 +10332,7 @@
   {
     "categoria": "CONINCA",
     "clave": "7591594770958",
-    "descripcion": "",
+    "descripcion": "Para cable 5/16\" 600v125°C 16-8 AWG",
     "id": 1197,
     "imagen": "",
     "nombre": "CDL8A TERMOCONTRACTIL 8MM AMARILLO",
@@ -10342,7 +10343,7 @@
   {
     "categoria": "CONINCA",
     "clave": "17502628360846",
-    "descripcion": "",
+    "descripcion": "209.09",
     "id": 1264,
     "imagen": "",
     "nombre": "CDL8N TERMOCONTRACTIL 8MM NEGRO",
@@ -10353,7 +10354,7 @@
   {
     "categoria": "CONINCA",
     "clave": "9598560770972",
-    "descripcion": "",
+    "descripcion": "Para cable 16-8 AWG",
     "id": 1196,
     "imagen": "",
     "nombre": "CDL8R TERMOCONTRACTIL 8MM100M ROJO 5/16\"600V 125°C",
@@ -10364,7 +10365,7 @@
   {
     "categoria": "CONINCA",
     "clave": "7591594770989",
-    "descripcion": "",
+    "descripcion": "Para cable 12-4 AWG",
     "id": 1199,
     "imagen": "",
     "nombre": "CDL9N TERMOCONTRACTIL 9MM NEGRO 3/8\" 600V 125°C",
@@ -10408,7 +10409,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "LOMBARD",
-    "descripcion": "",
+    "descripcion": "Para el pegado de zapatos, termo aislante, lata de 1/48 de galón.",
     "id": 875,
     "imagen": "",
     "nombre": "CEMENTO DE CONTACTO PEGAMENTO AMARILLO 1/48",
@@ -10837,7 +10838,7 @@
   {
     "categoria": "IML",
     "clave": "CONECTOR CABLE F COAXIA",
-    "descripcion": "",
+    "descripcion": "Para conexion de cables de TV o de antenas siempre que se use cable coaxial.",
     "id": 980,
     "imagen": "",
     "nombre": "CONECTOR DE CABLE CIAXIAL TV IML RG6",
@@ -10903,7 +10904,7 @@
   {
     "categoria": "TRUPER",
     "clave": "131213",
-    "descripcion": "",
+    "descripcion": "Cono con banda reflectiva de hule para mayor resistencia, resiste mas que otro por el material y no se aja bajo el sol.",
     "id": 890,
     "imagen": "",
     "nombre": "CONO DE PRECAUCION TRUPER",
@@ -10958,7 +10959,7 @@
   {
     "categoria": "CRS",
     "clave": "COPA DE 3/8",
-    "descripcion": "",
+    "descripcion": "Para uso de maquina taladro destorniklar exagonales de 3/8 1/4",
     "id": 86,
     "imagen": "",
     "nombre": "COPA DE MAQUINA 3/8",
@@ -11090,7 +11091,7 @@
   {
     "categoria": "TRAMOMTINA",
     "clave": "7891112052765",
-    "descripcion": "",
+    "descripcion": "Para uso en la cocina",
     "id": 936,
     "imagen": "",
     "nombre": "CUCHILLO CARNICERO BLANCO PROFESIONAL 10\"",
@@ -11114,7 +11115,7 @@
     "clave": "bdoskssb",
     "descripcion": "",
     "id": 1,
-    "imagen": "images/prod_1.jpg",
+    "imagen": "",
     "nombre": "Computadora",
     "precio": 1000.0,
     "tipo": "producto",
@@ -11255,7 +11256,7 @@
   {
     "categoria": "DEWALT",
     "clave": "Y282IWVDJ",
-    "descripcion": "",
+    "descripcion": "1274.35",
     "id": 1634,
     "imagen": "",
     "nombre": "D26676-B3 CEPILLO 3 1/4\" 5A 1/16\" PROF 17K RPM DEW",
@@ -11486,7 +11487,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "D7 O1",
-    "descripcion": "",
+    "descripcion": "Para conexiones de pantallas mediante cable compu, o proyectos electronicos.",
     "id": 462,
     "imagen": "",
     "nombre": "D7 O1",
@@ -11519,7 +11520,7 @@
   {
     "categoria": "VOLTECK",
     "clave": "7501206698839",
-    "descripcion": "",
+    "descripcion": "Tipo camapana apara conexion de cable coaxila de tele o de antenas con alta ganancia.",
     "id": 885,
     "imagen": "",
     "nombre": "D8 O2 48480 CONECTOR CABLE RG6 F",
@@ -11541,7 +11542,7 @@
   {
     "categoria": "DEWALT",
     "clave": "DC240100DI",
-    "descripcion": "",
+    "descripcion": "Pistola de pintar, acoples varios y manguera de 25 pies",
     "id": 1323,
     "imagen": "",
     "nombre": "DC240100DI COMBO COMPRESOR DE 24 LITROS CAPBELL",
@@ -11585,7 +11586,7 @@
   {
     "categoria": "DEWALT",
     "clave": "885911486736",
-    "descripcion": "",
+    "descripcion": "2468",
     "id": 1289,
     "imagen": "",
     "nombre": "DCK287D2 KIT TALADRO Y ATORNILLADOR SIN CARBONES",
@@ -11596,7 +11597,7 @@
   {
     "categoria": "EBULLIENT",
     "clave": "RHKCFII",
-    "descripcion": "",
+    "descripcion": "52",
     "id": 139,
     "imagen": "",
     "nombre": "DESENGRASANTE DE MOTOR EBULLIENT",
@@ -11607,7 +11608,7 @@
   {
     "categoria": "ASTURIAS",
     "clave": "DESGRANADORA",
-    "descripcion": "",
+    "descripcion": "166.67",
     "id": 177,
     "imagen": "",
     "nombre": "DESGRANADORA DE MAIZ CHINA",
@@ -11673,7 +11674,7 @@
   {
     "categoria": "STEREN",
     "clave": "200-203",
-    "descripcion": "",
+    "descripcion": "Para dividir cable rg6 spliter",
     "id": 918,
     "imagen": "",
     "nombre": "DIVISOR DE CABLE DE 3 SALIDAS 75 OHMS SPLITER",
@@ -11684,7 +11685,7 @@
   {
     "categoria": "STEREN",
     "clave": "200-204",
-    "descripcion": "",
+    "descripcion": "Para uso de cable rg6",
     "id": 917,
     "imagen": "",
     "nombre": "DIVISOR DE CABLE DE 4 SALIDAS 75 OHMS SPLITER",
@@ -11750,7 +11751,7 @@
   {
     "categoria": "DEWALT",
     "clave": "DW616ROUTER",
-    "descripcion": "",
+    "descripcion": "1669.87",
     "id": 1314,
     "imagen": "",
     "nombre": "DW616 ROUTER BASE FIJA 1 3/4HP 24,500 RPM DEWALT",
@@ -11761,7 +11762,7 @@
   {
     "categoria": "DEWALT",
     "clave": "CEPILLOSEMIESTACIONARIO",
-    "descripcion": "",
+    "descripcion": "5189    5275.26   4924.78 5214",
     "id": 1384,
     "imagen": "",
     "nombre": "DW734 CEPILLO PORTATIL 12 1/2\" 10K RPM 1 1/8\" CORT",
@@ -11794,7 +11795,7 @@
   {
     "categoria": "DEWALT",
     "clave": "885911317627",
-    "descripcion": "",
+    "descripcion": "552.13",
     "id": 682,
     "imagen": "",
     "nombre": "DWD024-B3 TALADRO BARRENO 1/2\" 750W",
@@ -11805,7 +11806,7 @@
   {
     "categoria": "DEWALT",
     "clave": "885911230988",
-    "descripcion": "",
+    "descripcion": "759.51 719 681",
     "id": 681,
     "imagen": "",
     "nombre": "DWE300-B3 SIERRA CALADORA 650W",
@@ -11816,7 +11817,7 @@
   {
     "categoria": "DEWALT",
     "clave": "885911351911",
-    "descripcion": "",
+    "descripcion": "Com antigua 470 517  519 510",
     "id": 1153,
     "imagen": "",
     "nombre": "DWE4010-B3ESMERILADORA PULIDORA 4 1/2\" 750W DEWALT",
@@ -11838,7 +11839,7 @@
   {
     "categoria": "DEWALT",
     "clave": "YDOSKSBWJ",
-    "descripcion": "",
+    "descripcion": "676.87   716",
     "id": 1492,
     "imagen": "",
     "nombre": "DWE4120-B3 PULIDORA 900W 12000RPM GATIO DEWALT",
@@ -11849,7 +11850,7 @@
   {
     "categoria": "DEWALT",
     "clave": "885911295383",
-    "descripcion": "",
+    "descripcion": "1332",
     "id": 1294,
     "imagen": "",
     "nombre": "DWE4559 ESMERILADORA PULIDORA DE 9\" DEWALT",
@@ -11860,7 +11861,7 @@
   {
     "categoria": "DEWALT",
     "clave": "885911436755",
-    "descripcion": "",
+    "descripcion": "1322",
     "id": 1251,
     "imagen": "",
     "nombre": "DWE490 ESMERILADORA PULIDORA 9\" 2200 W DEWALT",
@@ -11871,7 +11872,7 @@
   {
     "categoria": "DEWALT",
     "clave": "HEKDOSKSN",
-    "descripcion": "",
+    "descripcion": "1380",
     "id": 1451,
     "imagen": "",
     "nombre": "DWE496 ESMERILADORA PULIDORA 9\" 2600W 23.5A DEWALT",
@@ -11882,7 +11883,7 @@
   {
     "categoria": "DEWALT",
     "clave": "885911275057",
-    "descripcion": "",
+    "descripcion": "1047.43",
     "id": 693,
     "imagen": "",
     "nombre": "DWE560 SIERRA CIRCULAR 7 1/4\" 1400 WATTS DEWALT",
@@ -11915,7 +11916,7 @@
   {
     "categoria": "DEWALT",
     "clave": "885911388672",
-    "descripcion": "",
+    "descripcion": "Compra antigua 682.21",
     "id": 1154,
     "imagen": "",
     "nombre": "DWE6421-B3 LIJADORA ROTO1 1/4HP 280W 7A. DEWALT",
@@ -12003,7 +12004,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "SENSOR MAG",
-    "descripcion": "",
+    "descripcion": "Interruptor switch mediante imanes o magnetismo",
     "id": 610,
     "imagen": "",
     "nombre": "E3 O2 SENSOR MAGNETICOINTERRUPTOR",
@@ -12146,7 +12147,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "ARDUINO NANO",
-    "descripcion": "",
+    "descripcion": "Para programar proyectos electronicos o de uso doméstico",
     "id": 614,
     "imagen": "",
     "nombre": "E7 O2 ARDUINO NANO",
@@ -12234,7 +12235,7 @@
   {
     "categoria": "HUNTER",
     "clave": "7453011770142",
-    "descripcion": "",
+    "descripcion": "Multimetro escolar amarillo mide tido menos continuidad por ruido. Pero no importa por que se ve en la pantalla.",
     "id": 914,
     "imagen": "",
     "nombre": "EL-1257 MULTIMETRO AMARILLO PEQUEÑO",
@@ -12487,7 +12488,7 @@
   {
     "categoria": "IML",
     "clave": "GRABADORA",
-    "descripcion": "",
+    "descripcion": "Uso general, grabadoras, percoladora, repuesto de aparatos varios.",
     "id": 313,
     "imagen": "",
     "nombre": "ESPIGA EXTENSOR DE GRABADORA CABLE",
@@ -12520,7 +12521,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "ESTANO UNA YARDA",
-    "descripcion": "",
+    "descripcion": "Para soldaduras de cobre o materiales similares",
     "id": 132,
     "imagen": "",
     "nombre": "ESTAÑO 0.8MM",
@@ -12531,7 +12532,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "8022882131513",
-    "descripcion": "",
+    "descripcion": "Para soldaduras incluye pasta en el estaño",
     "id": 916,
     "imagen": "",
     "nombre": "ESTAÑO 16 GRAMOS TUBO",
@@ -12729,7 +12730,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "SENSOR LINEA",
-    "descripcion": "",
+    "descripcion": "Para carritos o robots",
     "id": 611,
     "imagen": "",
     "nombre": "F3 O2 SENSOR SEGUIDOR DE LINEAS",
@@ -12751,7 +12752,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "LED INFRARROJO",
-    "descripcion": "",
+    "descripcion": "Para conecciones invisibles",
     "id": 123,
     "imagen": "",
     "nombre": "F4 O2 LED INFRARROJO",
@@ -12839,7 +12840,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "74LS04",
-    "descripcion": "",
+    "descripcion": "Negador",
     "id": 80,
     "imagen": "",
     "nombre": "F7 O1 COMPUERTA NOT NEGADOR",
@@ -12905,7 +12906,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "74LS02",
-    "descripcion": "",
+    "descripcion": "Multiplica y niega la salida.",
     "id": 252,
     "imagen": "",
     "nombre": "F8 O1 COMPUERTA NOR",
@@ -13290,7 +13291,7 @@
   {
     "categoria": "MATABI",
     "clave": "MATABI",
-    "descripcion": "",
+    "descripcion": "Para fumigar, gran capacidad de 4 galones.",
     "id": 909,
     "imagen": "",
     "nombre": "FUMIGADOR MATABI 4 GALONES",
@@ -13477,7 +13478,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "74LS32",
-    "descripcion": "",
+    "descripcion": "Suma",
     "id": 250,
     "imagen": "",
     "nombre": "G7 O1 COMPUERTA OR SUMADOR",
@@ -13488,7 +13489,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "BROCA 1/32",
-    "descripcion": "",
+    "descripcion": "Para hacer agujeros ultra finos en placas de electrónica",
     "id": 76,
     "imagen": "",
     "nombre": "G7 O2 BROCA DE 1/32\" PARA PLACAS",
@@ -13642,7 +13643,7 @@
   {
     "categoria": "PHILIPS",
     "clave": "13000",
-    "descripcion": "",
+    "descripcion": "Gasneon blanco de 40 watts y 40 pulgadas para usarlo en lamparas puestas.",
     "id": 598,
     "imagen": "",
     "nombre": "GASNEON CANDELA GAS PHILIPS",
@@ -13774,7 +13775,7 @@
   {
     "categoria": "BOSCH MASTER",
     "clave": "3165140937894",
-    "descripcion": "",
+    "descripcion": "Antes Q761.25",
     "id": 1217,
     "imagen": "",
     "nombre": "GKS 150 SIERRA CIRCULAR 1500W BOSCH",
@@ -13807,7 +13808,7 @@
   {
     "categoria": "3M",
     "clave": "3414970503893",
-    "descripcion": "",
+    "descripcion": "Para sujetar cables como UTP, coaxial y mas.",
     "id": 30,
     "imagen": "",
     "nombre": "GRAPA PLASTICA 3M 6MM",
@@ -13873,7 +13874,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "GRAPA PLASTICA  MEJIA 4",
-    "descripcion": "",
+    "descripcion": "Tachuela o grapa para colocar alambres como: UTP, coaxial etc...",
     "id": 604,
     "imagen": "",
     "nombre": "GRAPA PLASTICA TACHUELA REDONDA 50U NUMERO 4",
@@ -13884,7 +13885,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "GRAPA PLASTICA MEJIA 6",
-    "descripcion": "",
+    "descripcion": "Tachuela o grapa para colocar alambres como: UTP, coaxial etc...",
     "id": 929,
     "imagen": "",
     "nombre": "GRAPA PLASTICA TACHUELA REDONDA 50U NUMERO 6",
@@ -13895,7 +13896,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "GRAPAS DE FAJA",
-    "descripcion": "",
+    "descripcion": "15 por tira",
     "id": 158,
     "imagen": "",
     "nombre": "GRAPAS PARA FAJA DE MOLINO 27",
@@ -14082,7 +14083,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "60532",
-    "descripcion": "",
+    "descripcion": "15.50",
     "id": 542,
     "imagen": "",
     "nombre": "GUANTE NITRILO DOBLE",
@@ -14093,7 +14094,7 @@
   {
     "categoria": "3M",
     "clave": "054007989554",
-    "descripcion": "",
+    "descripcion": "Para uso de instalaciones eléctricas y mas.",
     "id": 920,
     "imagen": "",
     "nombre": "GUANTES 3M ELECTRICIDAD L",
@@ -14137,7 +14138,7 @@
   {
     "categoria": "BOSCH MASTER",
     "clave": "3165140889797",
-    "descripcion": "",
+    "descripcion": "El de bosch sale a 420\nEl de pacifico 533  \n460 ant",
     "id": 1148,
     "imagen": "",
     "nombre": "GWS 670 TERMI PULIDORA 670W BOSCH 4 1/2\"",
@@ -14302,7 +14303,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "BOCINA",
-    "descripcion": "",
+    "descripcion": "Bocina para audio.",
     "id": 317,
     "imagen": "",
     "nombre": "H5 O2 BOCINA 8 OHMS 1/2 WATT",
@@ -14357,7 +14358,7 @@
   {
     "categoria": "HOTECHE",
     "clave": "JXKZKZBDB",
-    "descripcion": "",
+    "descripcion": "602",
     "id": 1566,
     "imagen": "",
     "nombre": "H652005 SET DE GATO TOPES Y TORRES DE 2 TON LAGART",
@@ -14368,7 +14369,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "74LS86",
-    "descripcion": "",
+    "descripcion": "Sumador",
     "id": 251,
     "imagen": "",
     "nombre": "H7 O1 COMPUERTA XOR SUMADOR EXCLUSIVO OR",
@@ -14643,7 +14644,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "ULTRALON",
-    "descripcion": "",
+    "descripcion": "Pita de albañil o pesca para nivel o mas.",
     "id": 930,
     "imagen": "",
     "nombre": "HILO PITA DE ALBAÑIL PLASTICA 80M",
@@ -14753,7 +14754,7 @@
   {
     "categoria": "CONINCA",
     "clave": "7591594330442",
-    "descripcion": "",
+    "descripcion": "Sirve para aislar cables ensamblados mediante fuego.",
     "id": 279,
     "imagen": "",
     "nombre": "KDN100 TERMOCONTRACTIL TERMOENCOGIBLE PARA CABLES",
@@ -14775,7 +14776,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "LAGARTO ABC",
-    "descripcion": "",
+    "descripcion": "Para hacer pruebas de corriente o experimentos.",
     "id": 97,
     "imagen": "",
     "nombre": "LAGARTO AISLADO CON CABLE",
@@ -14797,7 +14798,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "LAMPARA EMERGENCIA",
-    "descripcion": "",
+    "descripcion": "Para cuando se valla la luz.",
     "id": 635,
     "imagen": "",
     "nombre": "LAMPARA DE EMERGENCIA 110V",
@@ -14841,7 +14842,7 @@
   {
     "categoria": "SOLAR",
     "clave": "5551796401212",
-    "descripcion": "",
+    "descripcion": "Para alumbrado público",
     "id": 620,
     "imagen": "",
     "nombre": "LAMPARA SOLAR PANEL",
@@ -14863,7 +14864,7 @@
   {
     "categoria": "TRAMOMTINA",
     "clave": "LAVATRASTO2TARJAS",
-    "descripcion": "",
+    "descripcion": "567.96 lavatrastos + accesorios",
     "id": 1275,
     "imagen": "",
     "nombre": "LAVATRASTOS 2 TARJAS TRAMONTINA",
@@ -14896,7 +14897,7 @@
   {
     "categoria": "PLASCO",
     "clave": "LAZO1-4",
-    "descripcion": "",
+    "descripcion": "Saldo 564  780 mts",
     "id": 84,
     "imagen": "",
     "nombre": "LAZO 1/4\" ANARANJADO",
@@ -14907,7 +14908,7 @@
   {
     "categoria": "PLASCO",
     "clave": "LAZO3-8",
-    "descripcion": "",
+    "descripcion": "522 mts",
     "id": 10,
     "imagen": "",
     "nombre": "LAZO 3/8\"",
@@ -15050,7 +15051,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "LIMA MOTSIRRA PACIFICO",
-    "descripcion": "",
+    "descripcion": "Para limar dientes de motosierra o uso general",
     "id": 931,
     "imagen": "",
     "nombre": "LIMA DE MOTOSIERRA 3/16\" LIMA REDONDA",
@@ -15061,7 +15062,7 @@
   {
     "categoria": "PRETUL",
     "clave": "7501206648018",
-    "descripcion": "",
+    "descripcion": "Para uso general o limar dientes de motosierra solo que la lima es redonda",
     "id": 371,
     "imagen": "",
     "nombre": "LIMA MOTOSIERRA PRETUL",
@@ -15105,7 +15106,7 @@
   {
     "categoria": "CONINCA",
     "clave": "7591594792417",
-    "descripcion": "",
+    "descripcion": "Info adicional de prueba reparación",
     "id": 5,
     "imagen": "",
     "nombre": "LITRO KC100 KIT DE AMARRAS CINCHO PLASTICO CION",
@@ -15127,7 +15128,7 @@
   {
     "categoria": "CAIMAN",
     "clave": "7401175602960",
-    "descripcion": "",
+    "descripcion": "Llave allen milimetrica de 8 piezas 1.5 a 6 mm",
     "id": 937,
     "imagen": "",
     "nombre": "LLAVE ALLEN JUEGO 8 PZS 1/16\" A 1/4\" CAIMAN",
@@ -15138,7 +15139,7 @@
   {
     "categoria": "CRS",
     "clave": "8022882160063",
-    "descripcion": "",
+    "descripcion": "Llave con 4 puntas de broquero o mandril. Los mas usados 3/8 y 1/2",
     "id": 945,
     "imagen": "",
     "nombre": "LLAVE BROQUERO 4 PUNTAS TODAS LAS MEDIDAS",
@@ -15149,7 +15150,7 @@
   {
     "categoria": "BESTVALVE",
     "clave": "7453001150091",
-    "descripcion": "",
+    "descripcion": "Para broquero de 1/2\" taladro",
     "id": 947,
     "imagen": "",
     "nombre": "LLAVE BROQUERO O MANDRIL 1/2\"",
@@ -15259,7 +15260,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "7401175601543",
-    "descripcion": "",
+    "descripcion": "Para ajustar broquero o mandril taladro de 1/2\"",
     "id": 932,
     "imagen": "",
     "nombre": "LLAVE PARA MANDRIL 13MM 1/2",
@@ -15457,7 +15458,7 @@
   {
     "categoria": "IML",
     "clave": "DUPLEX 12 ALUMINIO",
-    "descripcion": "",
+    "descripcion": "Conexiones de casa o extenciones 2.19",
     "id": 9,
     "imagen": "",
     "nombre": "METRO CABLE ALELO STP NUMERO 12",
@@ -15512,7 +15513,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "MODULO DRIVER DE MOTOR",
-    "descripcion": "",
+    "descripcion": "Modulo para proyectos, puente h, controlador de motores con arduino y mas. Da para 4 motores, pueden ser motores paso a paso ( steper) consultar organizador: E8 O2",
     "id": 613,
     "imagen": "",
     "nombre": "MODULO DE NOTORES DRIVER 4 MOTORES",
@@ -15534,7 +15535,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "7702561100009",
-    "descripcion": "",
+    "descripcion": "Para moler granos como maíz y cafe.",
     "id": 632,
     "imagen": "",
     "nombre": "MOLINO DE GRANOS",
@@ -15600,7 +15601,7 @@
   {
     "categoria": "IMPRODUCTIVO",
     "clave": "MOSTRADOR",
-    "descripcion": "",
+    "descripcion": "Son Q 1400",
     "id": 618,
     "imagen": "",
     "nombre": "MOSTRADOR",
@@ -15611,7 +15612,7 @@
   {
     "categoria": "ELECTRONICA BP",
     "clave": "MOTO REDUCTOR",
-    "descripcion": "",
+    "descripcion": "Sin llanta se puede en 30",
     "id": 1629,
     "imagen": "",
     "nombre": "MOTOREDUCTOR CON LLANTA",
@@ -15666,7 +15667,7 @@
   {
     "categoria": "ELECTROMA",
     "clave": "NIPLE3GAL",
-    "descripcion": "",
+    "descripcion": "57.8",
     "id": 732,
     "imagen": "",
     "nombre": "NIPLE 1 1/4\" GALVANIZADO 3 MTS",
@@ -15677,7 +15678,7 @@
   {
     "categoria": "ELECTROMA",
     "clave": "NIPLE2GAL",
-    "descripcion": "",
+    "descripcion": "37.98",
     "id": 1348,
     "imagen": "",
     "nombre": "NIPLE GALVANIZADO 1 1/4\" 2 MTS",
@@ -15745,7 +15746,7 @@
     "clave": "wh9wi2u",
     "descripcion": "",
     "id": 2,
-    "imagen": "images/prod_2.jpg",
+    "imagen": "",
     "nombre": "Nutella",
     "precio": 150.0,
     "tipo": "producto",
@@ -15776,7 +15777,7 @@
   {
     "categoria": "TRUPER",
     "clave": "10895",
-    "descripcion": "",
+    "descripcion": "Son Q 540.74",
     "id": 459,
     "imagen": "",
     "nombre": "ORGANIZADOR DE 64 COMPARTIMENTOS",
@@ -15787,7 +15788,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "MATRIZ 8X8MM",
-    "descripcion": "",
+    "descripcion": "Modulo para arduino o protoboard para alumbrar letras, efectos y más.  Proyectos de electronica en general.",
     "id": 314,
     "imagen": "",
     "nombre": "PANEL LED  LCD PARA PROYECTOS",
@@ -15831,7 +15832,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "4005796243019",
-    "descripcion": "",
+    "descripcion": "Pasta para soldar de 50 gramos amarilla",
     "id": 873,
     "imagen": "",
     "nombre": "PASTA PARA SOLDAR FELDER",
@@ -15897,7 +15898,7 @@
   {
     "categoria": "HUNTER",
     "clave": "AC-1124",
-    "descripcion": "",
+    "descripcion": "Pesa de 22 libras análoga",
     "id": 912,
     "imagen": "",
     "nombre": "PESA DE 22 LIBRAS ANALOGO",
@@ -16183,7 +16184,7 @@
   {
     "categoria": "GLOBALFLEX",
     "clave": "ACRILOCO2MM",
-    "descripcion": "",
+    "descripcion": "420",
     "id": 524,
     "imagen": "",
     "nombre": "PLANCHA DE ACRILICO TRASPARENTE 1.22 X 2.44",
@@ -16227,7 +16228,7 @@
   {
     "categoria": "DISVI",
     "clave": "PLATOS",
-    "descripcion": "",
+    "descripcion": "Se vende por paquete o unidad",
     "id": 636,
     "imagen": "",
     "nombre": "PLATOS DESECHABLES BANDEJA",
@@ -16315,7 +16316,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "PLUG",
-    "descripcion": "",
+    "descripcion": "Para adaptar audio de 3.5 a 1/4, puede ser para bocinas.",
     "id": 478,
     "imagen": "",
     "nombre": "PLUG BANANA CONVERTIDOR ADAPTADOR 3.5 A 1/4",
@@ -16326,7 +16327,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "PLUG DC 5.5X2.1MM",
-    "descripcion": "",
+    "descripcion": "Para passr corriente a los jack de dc",
     "id": 377,
     "imagen": "",
     "nombre": "PLUG DE ALIMENTACION",
@@ -16337,7 +16338,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "PLUG DIVISOR",
-    "descripcion": "",
+    "descripcion": "Para dividir audio, ya se a de audifonos o de audio.",
     "id": 624,
     "imagen": "",
     "nombre": "PLUG DIVISOR DE BANANA 3.5",
@@ -16381,7 +16382,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "7730716014529",
-    "descripcion": "",
+    "descripcion": "Poxipol azul de 21 gramos para pegar todo tipo de pegado, endurece como el metal, color gris.",
     "id": 369,
     "imagen": "",
     "nombre": "POXIPOL AZUL",
@@ -16392,7 +16393,7 @@
   {
     "categoria": "PACIFICO",
     "clave": "7730716014536",
-    "descripcion": "",
+    "descripcion": "Poxipol trasparente de preferencia vender el azul, 16 gramos.",
     "id": 187,
     "imagen": "",
     "nombre": "POXIPOL ROJO 16 G",
@@ -16425,7 +16426,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "MB-102",
-    "descripcion": "",
+    "descripcion": "Protoboard para experimentos de una galleta buena calidad pornque trae numeros y no es 100% blanco se compara a el protoboard proskit",
     "id": 874,
     "imagen": "",
     "nombre": "PROTOBOARD DE UNA GALLETA",
@@ -16579,7 +16580,7 @@
   {
     "categoria": "IML",
     "clave": "GAS 2 CLIP",
-    "descripcion": "",
+    "descripcion": "24.72",
     "id": 990,
     "imagen": "",
     "nombre": "REGULADOR DE GAS 2 CLIP",
@@ -16711,7 +16712,7 @@
   {
     "categoria": "IML",
     "clave": "6934086688767",
-    "descripcion": "",
+    "descripcion": "Compatible para todos los televisores.",
     "id": 944,
     "imagen": "",
     "nombre": "RML 1080 CONTROL REMOTO UNIVERSAL SMART",
@@ -16777,7 +16778,7 @@
   {
     "categoria": "ELECTRONICA ABC",
     "clave": "ROTULO",
-    "descripcion": "",
+    "descripcion": "Rotulo LED de internet cafe led de alta intensidad para llamar la etención",
     "id": 602,
     "imagen": "",
     "nombre": "ROTULO LED INTERNET CAFE",
@@ -16898,7 +16899,7 @@
   {
     "categoria": "EBULLIENT",
     "clave": "7401174501707",
-    "descripcion": "",
+    "descripcion": "40",
     "id": 118,
     "imagen": "",
     "nombre": "SHAMPOO CON ULTRA CERA EBULLIENT",
@@ -17041,7 +17042,7 @@
   {
     "categoria": "IML",
     "clave": "ALDA",
-    "descripcion": "",
+    "descripcion": "75 ohm",
     "id": 1019,
     "imagen": "",
     "nombre": "SPLITER ALDA 4 SALIDAS",
@@ -17052,7 +17053,7 @@
   {
     "categoria": "CHINO",
     "clave": "2 WAY",
-    "descripcion": "",
+    "descripcion": "0ara division de cable de 1 a 2 salidas rg6",
     "id": 922,
     "imagen": "",
     "nombre": "SPLITER DIVISOR DE CABLE 1 A 2 RG6",
@@ -17063,7 +17064,7 @@
   {
     "categoria": "CHINO",
     "clave": "3 WAY",
-    "descripcion": "",
+    "descripcion": "Para uso de division dw cable de television de 1 a 3 salidas.",
     "id": 921,
     "imagen": "",
     "nombre": "SPLITER DIVISOR DE CABLE 1 A 3 RG6",
@@ -17074,7 +17075,7 @@
   {
     "categoria": "IML",
     "clave": "SPLIT 2 WAY IML",
-    "descripcion": "",
+    "descripcion": "Mantiene la señal, no pierde señal para la division de cable de tele coaxial.",
     "id": 943,
     "imagen": "",
     "nombre": "SPLITER DIVISOR DE CABLE DE 1 A 2",
@@ -17382,7 +17383,7 @@
   {
     "categoria": "CAIMAN",
     "clave": "7401175604575",
-    "descripcion": "",
+    "descripcion": "Para uso general, abrillanta el metal, abrullanta la pintura de otros colores y la protege para darle larga duración, es usado tambien para sellador de barniz en madera.",
     "id": 248,
     "imagen": "",
     "nombre": "SPRAY DE LACA SELLADOR TRASPARENTE",
@@ -17646,7 +17647,7 @@
   {
     "categoria": "DEWALT",
     "clave": "6382929",
-    "descripcion": "",
+    "descripcion": "1782.67   1798.83",
     "id": 1338,
     "imagen": "",
     "nombre": "SST18010 SIERRA DE BANCO STANLEY",
@@ -17657,7 +17658,7 @@
   {
     "categoria": "DEWALT",
     "clave": "045564100513",
-    "descripcion": "",
+    "descripcion": "27",
     "id": 521,
     "imagen": "",
     "nombre": "ST125312AV  ACEITE PARA COMPRESOR 1/2 LITRO CAMPBE",
@@ -17855,7 +17856,7 @@
   {
     "categoria": "DEWALT",
     "clave": "N018330",
-    "descripcion": "",
+    "descripcion": "82",
     "id": 1253,
     "imagen": "",
     "nombre": "SWITCH P/DWD014 DWD024",
@@ -18042,7 +18043,7 @@
   {
     "categoria": "TOOLCRAFT",
     "clave": "7501892888040",
-    "descripcion": "",
+    "descripcion": "1200w.",
     "id": 1122,
     "imagen": "",
     "nombre": "TC3441  CORTADORA DE AZULEJOS 4 1/2\"  TOOLCRAFT",
@@ -18152,7 +18153,7 @@
   {
     "categoria": "VIAKON",
     "clave": "CABLE LUZ  NUM 12",
-    "descripcion": "",
+    "descripcion": "Este se usa para instalaciones electricas mas común  200 a 2.29 (mas barato) 6 cajas a 2.31  2.37",
     "id": 16,
     "imagen": "",
     "nombre": "THHW CABLE NO. 12 VIAKON ROJO",
@@ -18218,7 +18219,7 @@
   {
     "categoria": "HUNTER",
     "clave": "HM-1544",
-    "descripcion": "",
+    "descripcion": "Para uso multiple, sastreria, cocina etc. Acero inox.",
     "id": 913,
     "imagen": "",
     "nombre": "TIJERA MULTIUSOS HUNTER 3 EN 1",
@@ -18625,7 +18626,7 @@
   {
     "categoria": "INGCO",
     "clave": "6928073605141",
-    "descripcion": "",
+    "descripcion": "385",
     "id": 1468,
     "imagen": "",
     "nombre": "UID1100TALADRO 1100 WATTS 2800RPM INGCO INDUSTRIAL",
@@ -18790,7 +18791,7 @@
   {
     "categoria": "CONINCA",
     "clave": "UW7107",
-    "descripcion": "",
+    "descripcion": "Para herreros y/o estructuras metalicas",
     "id": 1063,
     "imagen": "",
     "nombre": "UW7107 ESCUADRA MAGNETICA SOLDADOR 4\" 50 LIBRAS",
@@ -18966,7 +18967,7 @@
   {
     "categoria": "VIKINGO",
     "clave": "TARJAPEQUENA",
-    "descripcion": "",
+    "descripcion": "Mezcladora cromado plastico\nTubo flexible de abasto\nCanasta para lavatrsdtos\nSigon universal de 11/2 -11/4\" \nLavattasto acero inox 64x56  Q13.81",
     "id": 1159,
     "imagen": "",
     "nombre": "VK0693 LAVATRASTOS TARJA PEQUEÑA COMBO",
@@ -19109,7 +19110,7 @@
   {
     "categoria": "YARDEN",
     "clave": "LAVYARDEN",
-    "descripcion": "",
+    "descripcion": "Lavatrastos 206 y juego de accesorios 79",
     "id": 1128,
     "imagen": "",
     "nombre": "YD0123 LAVATRASTOS TARJA DERECHO 84X56CM YARDEN",
@@ -19208,7 +19209,7 @@
 ];
 
         let cart = {}; // { id: { item, qty } }
-        let currentCategory = "Todos";
+        let currentCategory = ALL_CATEGORIES_LABEL;
         let searchQuery = "";
         let visibleCount = PAGE_SIZE;
 
@@ -19226,12 +19227,18 @@
             const pillsContainer = document.getElementById("categoryPills");
             if (!pillsContainer) return;
 
-            const categories = ["Todos", ...new Set(products.map(p => p.categoria).filter(Boolean))];
-            pillsContainer.innerHTML = categories.map(cat => `
-                <button class="pill ${cat === currentCategory ? 'active' : ''}" onclick="selectCategory('${cat}')">
-                    ${cat}
-                </button>
-            `).join("");
+            const categories = [ALL_CATEGORIES_LABEL, ...new Set(products.map(p => p.categoria).filter(Boolean))];
+            pillsContainer.innerHTML = categories.map(cat => {
+                const isActive = cat === currentCategory ? ' active' : '';
+                const safeCat = cat.replace(/"/g, '&quot;');
+                return '<button class="pill' + isActive + '" data-category="' + safeCat + '">' + cat + '</button>';
+            }).join("");
+
+            pillsContainer.querySelectorAll(".pill").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    selectCategory(btn.getAttribute("data-category"));
+                });
+            });
         }
 
         function selectCategory(cat) {
@@ -19252,7 +19259,7 @@
             const loadMoreContainer = document.getElementById("loadMoreContainer");
 
             const filtered = products.filter(p => {
-                const matchCategory = !SHOW_CATEGORIES || currentCategory === "Todos" || p.categoria === currentCategory;
+                const matchCategory = !SHOW_CATEGORIES || currentCategory === ALL_CATEGORIES_LABEL || p.categoria === currentCategory;
                 const matchSearch = !searchQuery || 
                     p.nombre.toLowerCase().includes(searchQuery) ||
                     p.clave.toLowerCase().includes(searchQuery) ||
@@ -19265,7 +19272,7 @@
                 grid.innerHTML = `
                     <div class="empty-state">
                         <div style="font-size: 3rem; margin-bottom: 0.5rem;">🔍</div>
-                        <h3>No se encontraron productos</h3>
+                        <h3>No hay productos</h3>
                         <p>Intenta con otra búsqueda o categoría.</p>
                     </div>
                 `;
@@ -19275,45 +19282,59 @@
 
             const visibleProducts = filtered.slice(0, visibleCount);
 
-            grid.innerHTML = visibleProducts.map(p => `
+            grid.innerHTML = visibleProducts.map(p => {
+                const imgHtml = p.imagen ? 
+                    `<img src="${p.imagen}" alt="${p.nombre}" class="card-image" loading="lazy">` : 
+                    `<div class="card-image-placeholder">📦</div>`;
+                const catHtml = (SHOW_CATEGORIES && p.categoria) ? ('📁 ' + p.categoria + ' | ') : '';
+                const descHtml = p.descripcion ? 
+                    `<p class="card-desc" onclick="openProductModal(${p.id})" style="cursor:pointer;" title="Ver descripción completa">${p.descripcion}</p>` : '';
+                
+                return `
                 <div class="product-card">
                     <div class="card-image-wrap" onclick="openProductModal(${p.id})" title="Toca para ver imagen completa y detalles">
-                        ${p.imagen ? 
-                            `<img src="${p.imagen}" alt="${p.nombre}" class="card-image" loading="lazy">` : 
-                            `<div class="card-image-placeholder">📦</div>`}
-                        <div class="card-expand-badge">🔍 Ver</div>
+                        ${imgHtml}
+                        <div class="card-expand-badge">🔍 🔍 Ver</div>
                     </div>
                     <div class="card-body">
                         <div class="card-code">${p.clave}</div>
                         <h4 class="card-title" onclick="openProductModal(${p.id})" style="cursor:pointer;">${p.nombre}</h4>
-                        <div class="card-meta">${SHOW_CATEGORIES && p.categoria ? '📁 ' + p.categoria + ' | ' : ''}📏 ${p.unidad}</div>
-                        ${p.descripcion ? `<p class="card-desc" onclick="openProductModal(${p.id})" style="cursor:pointer;" title="Ver descripción completa">${p.descripcion}</p>` : ''}
+                        <div class="card-meta">${catHtml}📏 ${p.unidad}</div>
+                        ${descHtml}
                         <div class="card-footer">
                             <span class="card-price">${CURRENCY} ${Number(p.precio).toFixed(2)}</span>
                             <button class="btn-add" onclick="addToCart(${p.id})">
-                                🛒 Agregar
+                                🛒 🛒 Agregar
                             </button>
                         </div>
                     </div>
                 </div>
-            `).join("");
+                `;
+            }).join("");
 
             if (loadMoreContainer) {
                 if (filtered.length > visibleCount) {
+                    const remaining = filtered.length - visibleCount;
+                    const countText = "Mostrando {shown} de {total} productos"
+                        .replace("{shown}", visibleProducts.length)
+                        .replace("{total}", filtered.length);
+                    const loadMoreLabel = "📥 Cargar más productos";
                     loadMoreContainer.innerHTML = `
                         <div style="text-align: center; margin: 2.5rem 0 1.5rem 0;">
                             <button class="btn-load-more" onclick="loadMoreProducts()">
-                                📥 Cargar más productos (${filtered.length - visibleCount} restantes)
+                                📥 ` + loadMoreLabel + ` (` + remaining + `)
                             </button>
                             <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.6rem;">
-                                Mostrando ${visibleProducts.length} de ${filtered.length} productos
+                                ` + countText + `
                             </div>
                         </div>
                     `;
                 } else {
+                    const allText = "Mostrando todos los productos ({total})"
+                        .replace("{total}", filtered.length);
                     loadMoreContainer.innerHTML = `
                         <div style="text-align: center; margin: 2rem 0 1rem 0; font-size: 0.85rem; color: var(--text-muted);">
-                            Mostrando todos los productos (${filtered.length})
+                            ` + allText + `
                         </div>
                     `;
                 }
@@ -19495,7 +19516,7 @@
             const items = Object.values(cart);
             const totalAmount = items.reduce((acc, c) => acc + (c.qty * c.item.precio), 0);
 
-            let msg = "🛍️ *NUEVO PEDIDO - " + BUSINESS_NAME + "*\n";
+            let msg = "🛍️ *NUEVO PEDIDO - {business}*".replace("{business}", BUSINESS_NAME) + "\n";
             msg += "👤 *Cliente:* " + clientName + "\n";
             if (clientPhone) {
                 msg += "📞 *WhatsApp/Teléfono:* " + clientPhone + "\n";
@@ -19514,7 +19535,7 @@
             msg += "--------------------------------------\n";
             msg += "💰 *TOTAL A PAGAR:* " + CURRENCY + " " + totalAmount.toFixed(2) + "\n";
             msg += "--------------------------------------\n";
-            msg += "_Pedido generado desde la tienda virtual de " + BUSINESS_NAME + "_";
+            msg += "_Pedido generado desde la tienda virtual de {business}_".replace("{business}", BUSINESS_NAME);
 
             return msg;
         }
@@ -19582,7 +19603,8 @@
 
             const form = document.getElementById("orderSubmitForm");
             if (form) {
-                document.getElementById("submitSubject").value = "Nuevo Pedido - " + clientName + " - " + BUSINESS_NAME;
+                const subjectPrefix = "Nuevo Pedido - ";
+                document.getElementById("submitSubject").value = subjectPrefix + clientName + " - " + BUSINESS_NAME;
                 document.getElementById("submitClient").value = clientName;
                 document.getElementById("submitPhone").value = fullPhone;
                 document.getElementById("submitAddress").value = clientAddress || "No especificada";
